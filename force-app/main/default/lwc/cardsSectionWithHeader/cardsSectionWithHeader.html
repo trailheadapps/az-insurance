@@ -1,0 +1,50 @@
+<template>
+    <div
+        class="
+            slds-grid
+            slds-var-p-around_large
+            slds-grid_vertical
+            card-section_container
+            slds-var-p-horizontal_x-large
+        "
+    >
+        <div
+            class="
+                slds-col
+                slds-align_absolute-center
+                slds-size_1-of-1
+                slds-large-size_1-of-3
+                slds-p-horizontal_large
+            "
+        >
+            <h1>{title}</h1>
+        </div>
+        <div class="slds-col slds-align_absolute-center slds-var-p-top_large">
+            <p>{subTitle}</p>
+        </div>
+        <div class="slds-col">
+            <div class={gridContainerCss}>
+                <template for:each={cardsContent} for:item="card">
+                    <div
+                        class="
+                            slds-col
+                            slds-size_1-of-1
+                            slds-var-p-around_large
+                            slds-size_1-of-1
+                            slds-medium-size_1-of-1
+                            slds-large-size_1-of-4
+                        "
+                        key={card.contentId}
+                    >
+                        <c-cms-news-card-with-button
+                            content-id={card.contentId}
+                            button-label={card.buttonLabel}
+                            redirect-page-api-name={card.redirectPageApiName}
+                        >
+                        </c-cms-news-card-with-button>
+                    </div>
+                </template>
+            </div>
+        </div>
+    </div>
+</template>

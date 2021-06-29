@@ -1,0 +1,70 @@
+{
+    "appPageId": "24c5e29f-4104-4963-99c7-e83810aa4532",
+    "componentName": "community_layout:sldsFlexibleLayout",
+    "id": "e2efaacc-c660-4b44-97ec-4f4ca52ab11e",
+    "label": "Error",
+    "regions": [
+        {
+            "components": [
+                {
+                    "componentAttributes": {
+                        "sectionConfig": "{\"UUID\":\"2846339a-29b5-4298-ad5e-bb0dee303b7e\",\"columns\":[{\"UUID\":\"7d19dfe2-5490-4afb-a99a-b7e60f69d385\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":null}]}"
+                    },
+                    "componentName": "community_layout:section",
+                    "id": "2846339a-29b5-4298-ad5e-bb0dee303b7e",
+                    "regions": [
+                        {
+                            "components": [
+                                {
+                                    "componentAttributes": {
+                                        "richTextValue": "<p community_builder-richtexteditor_richtexteditor=\"\" style=\"text-align: center;\"><br community_builder-richtexteditor_richtexteditor=\"\"></p><p community_builder-richtexteditor_richtexteditor=\"\" style=\"text-align: center;\"><br community_builder-richtexteditor_richtexteditor=\"\"></p><p community_builder-richtexteditor_richtexteditor=\"\" style=\"text-align: center;\"><b community_builder-richtexteditor_richtexteditor=\"\">Ooooops - that page doesn't seem to exist...</b></p><p community_builder-richtexteditor_richtexteditor=\"\" style=\"text-align: center;\">\n</p><p community_builder-richtexteditor_richtexteditor=\"\" style=\"text-align: center;\"><br community_builder-richtexteditor_richtexteditor=\"\"></p><p community_builder-richtexteditor_richtexteditor=\"\" style=\"text-align: center;\">Why not click on the AZ Insurance logo and try again?\n\n</p><p community_builder-richtexteditor_richtexteditor=\"\" style=\"text-align: center;\"><br community_builder-richtexteditor_richtexteditor=\"\"></p><p community_builder-richtexteditor_richtexteditor=\"\" style=\"text-align: center;\"><br community_builder-richtexteditor_richtexteditor=\"\"></p>"
+                                    },
+                                    "componentName": "community_builder:richTextEditor",
+                                    "id": "4eaff0b4-5045-4684-9f6a-bd110512a0c9",
+                                    "renderPriority": "NEUTRAL",
+                                    "renditionMap": {},
+                                    "type": "component"
+                                }
+                            ],
+                            "id": "7d19dfe2-5490-4afb-a99a-b7e60f69d385",
+                            "regionLabel": "Column 1",
+                            "regionName": "col1",
+                            "renditionMap": {},
+                            "type": "region"
+                        }
+                    ],
+                    "renderPriority": "NEUTRAL",
+                    "renditionMap": {},
+                    "scopedBrandingSetId": null,
+                    "type": "component"
+                }
+            ],
+            "id": "df43cbf4-990b-4451-bdb0-4dbf0f2d9e2b",
+            "regionName": "content",
+            "type": "region"
+        },
+        {
+            "components": [
+                {
+                    "componentAttributes": {
+                        "customHeadTags": "",
+                        "description": "",
+                        "pageTitle": "Ooooops | AZ Insurance",
+                        "recordId": "{!recordId}"
+                    },
+                    "componentName": "community_builder:seoAssistant",
+                    "id": "d5b04552-8f40-4c99-ab2d-3797876a610d",
+                    "renderPriority": "NEUTRAL",
+                    "renditionMap": {},
+                    "type": "component"
+                }
+            ],
+            "id": "48d623eb-3907-42b1-aef5-4b2c5d3959a2",
+            "regionName": "sfdcHiddenRegion",
+            "type": "region"
+        }
+    ],
+    "themeLayoutType": "0qkAx12f7ZmTsOGK05UuODOy6CXlEq",
+    "type": "view",
+    "viewType": "error"
+}

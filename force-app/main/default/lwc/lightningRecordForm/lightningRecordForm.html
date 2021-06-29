@@ -1,0 +1,98 @@
+<template>
+    <lightning-record-edit-form
+        object-api-name="LWR_Demo_Lead__c"
+        onsuccess={handleSuccess}
+    >
+        <div
+            class="
+                slds-grid slds-wrap
+                slds-gutters_x-small
+                slds-grid_align-center
+            "
+        >
+            <div class="slds-col slds-size_1-of-1">
+                <h3 class="slds-text-align_center">{title}</h3>
+            </div>
+            <div class="slds-col slds-size_1-of-1">
+                <div
+                    class="
+                        slds-grid
+                        slds-gutters_x-small
+                        slds-grid_align-center
+                    "
+                >
+                    <div class="slds-col">
+                        <c-cms-image-with-title
+                            title={title1}
+                            content-id={contentId1}
+                            action={action1}
+                            onimageselected={handleImageSelected}
+                            selected={selected1}
+                        ></c-cms-image-with-title>
+                    </div>
+                    <div class="slds-col">
+                        <c-cms-image-with-title
+                            title={title2}
+                            content-id={contentId2}
+                            action={action2}
+                            onimageselected={handleImageSelected}
+                            selected={selected2}
+                        ></c-cms-image-with-title>
+                    </div>
+                    <div class="slds-col">
+                        <c-cms-image-with-title
+                            title={title3}
+                            content-id={contentId3}
+                            action={action3}
+                            onimageselected={handleImageSelected}
+                            selected={selected3}
+                        ></c-cms-image-with-title>
+                    </div>
+                </div>
+            </div>
+            <div class="slds-col slds-size_1-of-1">
+                <lightning-messages> </lightning-messages>
+            </div>
+            <div class="slds-col slds-size_1-of-2 slds-var-m-top_x-small">
+                <lightning-input-field
+                    field-name="First_Name__c"
+                    variant="label-hidden"
+                    required
+                >
+                </lightning-input-field>
+            </div>
+            <div class="slds-col slds-size_1-of-2 slds-var-m-top_x-small">
+                <lightning-input-field
+                    field-name="Last_Name__c"
+                    variant="label-hidden"
+                    required
+                >
+                </lightning-input-field>
+            </div>
+            <div class="slds-col slds-size_1-of-1 slds-var-m-top_x-small">
+                <lightning-input-field
+                    field-name="Address__c"
+                    variant="label-hidden"
+                    required
+                >
+                </lightning-input-field>
+            </div>
+            <div class="slds-col slds-size_1-of-1 slds-var-m-top_x-small">
+                <lightning-input-field
+                    field-name="Email__c"
+                    variant="label-hidden"
+                    required
+                >
+                </lightning-input-field>
+            </div>
+            <div class="slds-col slds-size_1-of-1 slds-var-m-top_x-small">
+                <button
+                    type="submit"
+                    class="slds-button slds-button_brand slds-button_stretch"
+                >
+                    {buttonLabel}
+                </button>
+            </div>
+        </div>
+    </lightning-record-edit-form>
+</template>

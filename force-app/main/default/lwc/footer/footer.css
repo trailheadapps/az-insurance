@@ -1,0 +1,6 @@
+.footer {
+    background-color: var(--dxp-g-footer-contrast) !important;
+    color: var(--dxp-g-neutral-contrast) !important;
+    font-size: 16px;
+    font: var(--dxp-g-root-font-family);
+}

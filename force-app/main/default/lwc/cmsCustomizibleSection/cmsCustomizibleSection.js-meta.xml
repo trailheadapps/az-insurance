@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>51.0</apiVersion>
+    <isExposed>true</isExposed>
+    <masterLabel>Customizible CMS Content Section</masterLabel>
+    <description>CMS content display</description>
+    <targets>
+        <target>lightningCommunity__Page</target>
+        <target>lightningCommunity__Default</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightningCommunity__Default">
+            <property
+                type="ContentReference"
+                name="contentId"
+                label="Content ID"
+                filter="news"
+            />
+            <property
+                label="Display Order"
+                name="displayOrder"
+                type="String"
+                datasource="default,Swapped"
+                default="default"
+            />
+            <property
+                type="Boolean"
+                name="showBackgroundColor"
+                label="Background Color"
+            />
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>

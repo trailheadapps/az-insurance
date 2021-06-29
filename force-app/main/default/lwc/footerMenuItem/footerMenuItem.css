@@ -1,0 +1,5 @@
+a.item {
+    color: var(--dxp-g-neutral-contrast);
+    font-size: 14px;
+    font: var(--dxp-g-root-font-family);
+}

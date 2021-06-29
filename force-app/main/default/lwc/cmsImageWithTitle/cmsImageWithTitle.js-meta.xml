@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>51.0</apiVersion>
+    <isExposed>true</isExposed>
+    <masterLabel>CMS Image With Title</masterLabel>
+    <description>CMS image to display</description>
+    <targets>
+        <target>lightningCommunity__Page</target>
+        <target>lightningCommunity__Default</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightningCommunity__Default">
+            <property
+                type="ContentReference"
+                name="contentId"
+                label="Content ID"
+                filter="cms_image"
+            />
+            <property
+                type="String"
+                name="title"
+                label="Title"
+                description="title display text"
+            />
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>

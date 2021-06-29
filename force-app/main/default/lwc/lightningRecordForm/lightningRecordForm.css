@@ -1,0 +1,5 @@
+:host {
+    --sds-c-input-radius-border: none;
+    --sds-c-input-color-background: var(--dxp-g-root, #e5e5e5);
+    margin-bottom: 2rem;
+}

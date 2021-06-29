@@ -1,0 +1,16 @@
+<template>
+    <div class={wrapperCss}>
+        <div class="slds-col slds-size_1-of-1 min-height" onclick={handleClick}>
+            <img
+                src={url}
+                alt={altText}
+                class={imgCss}
+                onmouseover={handleMouseOver}
+                onmouseout={handleMouseOut}
+            />
+        </div>
+        <div class="slds-col slds-align_absolute-center">
+            <p class="slds-text-align_center">{title}</p>
+        </div>
+    </div>
+</template>

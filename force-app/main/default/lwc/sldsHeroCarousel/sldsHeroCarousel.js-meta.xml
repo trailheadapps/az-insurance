@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>51.0</apiVersion>
+    <isExposed>true</isExposed>
+    <masterLabel>SLDS Custom Hero Carousel</masterLabel>
+    <description>Used to display CMS Content in a carousel</description>
+    <targets>
+        <target>lightningCommunity__Page</target>
+        <target>lightningCommunity__Default</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightningCommunity__Default">
+            <property
+                type="ContentReference"
+                name="contentId1"
+                label="Content ID 1"
+                filter="cms_carouselimage"
+            />
+            <property
+                type="ContentReference"
+                name="contentId2"
+                label="Content ID 2"
+                filter="cms_carouselimage"
+            />
+            <property
+                type="ContentReference"
+                name="contentId3"
+                label="Content ID 3"
+                filter="cms_carouselimage"
+            />
+            <property
+                type="ContentReference"
+                name="bannerContentId"
+                label="Banner Image Content Id"
+                filter="cms_image"
+            />
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>

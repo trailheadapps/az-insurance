@@ -1,0 +1,70 @@
+{
+    "appPageId": "24c5e29f-4104-4963-99c7-e83810aa4532",
+    "componentName": "community_layout:sldsFlexibleLayout",
+    "id": "f479d175-d00b-40a5-a254-b648a202d013",
+    "label": "Quote Confirmation",
+    "regions": [
+        {
+            "components": [
+                {
+                    "componentAttributes": {
+                        "sectionConfig": "{\"UUID\":\"7c17ba42-7ca2-4f79-be1f-c26b01516697\",\"columns\":[{\"UUID\":\"9f0471eb-9641-465c-b541-03e0e5da6378\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":[]}]}"
+                    },
+                    "componentName": "community_layout:section",
+                    "id": "7c17ba42-7ca2-4f79-be1f-c26b01516697",
+                    "regions": [
+                        {
+                            "components": [
+                                {
+                                    "componentAttributes": {
+                                        "richTextValue": "<p community_builder-richtexteditor_richtexteditor=\"\" style=\"text-align: center;\"><span community_builder-richtexteditor_richtexteditor=\"\" style=\"font-family: serif; font-size: 48px;\"><br community_builder-richtexteditor_richtexteditor=\"\" /></span><img src=\"{!cmsMedia.MC7ZJV3OR23VHKXOBIY6NKKANITE}\" width=\"343\" data-fileid=\"MC7ZJV3OR23VHKXOBIY6NKKANITE\" community_builder-richtexteditor_richtexteditor=\"\" /></p>\n<p community_builder-richtexteditor_richtexteditor=\"\"><span community_builder-richtexteditor_richtexteditor=\"\" style=\"font-family: serif; font-size: 48px;\">Quote sent. Check your email!</span></p>\n<p community_builder-richtexteditor_richtexteditor=\"\"><span community_builder-richtexteditor_richtexteditor=\"\" style=\"font-family: serif; font-size: 14px;\"><br community_builder-richtexteditor_richtexteditor=\"\" /></span></p>\n<p community_builder-richtexteditor_richtexteditor=\"\">What is a deductible? It's one of the most common car insurance questions and may be the easiest to answer: An auto insurance deductible is what you pay “out of pocket” on a claim. For instance, if you have a $500 deductible and $3,000 in damage from a covered accident, your insurer would pay $2,500 to repair your car. You're responsible for the remaining $500.</p>\n<p community_builder-richtexteditor_richtexteditor=\"\"><br community_builder-richtexteditor_richtexteditor=\"\" /></p>"
+                                    },
+                                    "componentName": "community_builder:richTextEditor",
+                                    "id": "b05fd3f0-9ea6-4bb5-bc05-0e85b201d8c6",
+                                    "renderPriority": "NEUTRAL",
+                                    "renditionMap": {},
+                                    "type": "component"
+                                }
+                            ],
+                            "id": "9f0471eb-9641-465c-b541-03e0e5da6378",
+                            "regionLabel": "Column 1",
+                            "regionName": "col1",
+                            "renditionMap": {},
+                            "type": "region"
+                        }
+                    ],
+                    "renderPriority": "NEUTRAL",
+                    "renditionMap": {},
+                    "scopedBrandingSetId": null,
+                    "type": "component"
+                }
+            ],
+            "id": "1a38c875-1b69-4bed-b098-df0784df9a23",
+            "regionName": "content",
+            "type": "region"
+        },
+        {
+            "components": [
+                {
+                    "componentAttributes": {
+                        "customHeadTags": "",
+                        "description": "",
+                        "pageTitle": "Quote Confirmation | AZ Insurance",
+                        "recordId": "{!recordId}"
+                    },
+                    "componentName": "community_builder:seoAssistant",
+                    "id": "907e5e1d-69f4-4741-a6a8-f7528a420269",
+                    "renderPriority": "NEUTRAL",
+                    "renditionMap": {},
+                    "type": "component"
+                }
+            ],
+            "id": "a1c6fdde-1156-4796-aa02-a130e469d26a",
+            "regionName": "sfdcHiddenRegion",
+            "type": "region"
+        }
+    ],
+    "themeLayoutType": "0qkAx12f7ZmTsOGK05UuODOy6CXlEq",
+    "type": "view",
+    "viewType": "custom-quote-confirmation"
+}

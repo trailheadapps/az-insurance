@@ -1,0 +1,11 @@
+<template>
+    <nav role="navigation" class="slds-nav-vertical slds-p-bottom_xx-large">
+        <ul class="slds-has-block-links_space">
+            <template for:each={menuItems} for:item="item">
+                <li key={item.id}>
+                    <c-footer-menu-item item={item}></c-footer-menu-item>
+                </li>
+            </template>
+        </ul>
+    </nav>
+</template>

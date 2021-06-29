@@ -1,0 +1,101 @@
+<template>
+    <div role="tabpanel" id="carousel-image" aria-hidden={ariaHidden}>
+        <div class="slds-carousel__panel-action" tabindex={tabIndex}>
+            <div class="slds-grid slds-wrap slds-grid_align-center">
+                <div
+                    class="
+                        slds-col slds-align-middle
+                        slds-order_2
+                        slds-large-order_1
+                        slds-size_1-of-1
+                        slds-large-size_1-of-2
+                    "
+                >
+                    <div class="slds-grid slds-wrap">
+                        <div
+                            class="
+                                slds-col
+                                slds-var-p-horizontal_large
+                                slds-size_1-of-1
+                            "
+                        >
+                            <h1>{title}</h1>
+                        </div>
+                        <div
+                            class="
+                                slds-col
+                                slds-var-p-horizontal_large
+                                slds-var-p-vertical_x-large
+                                slds-size_1-of-1
+                            "
+                        >
+                            <p>{excerpt}</p>
+                        </div>
+                        <div
+                            class="
+                                slds-col
+                                slds-var-p-horizontal_large
+                                slds-var-p-vertical_x-large
+                                slds-size_1-of-1
+                            "
+                        >
+                            <div class="slds-grid slds-wrap">
+                                <template if:true={includeButton1}>
+                                    <div
+                                        class="
+                                            slds-col
+                                            slds-var-p-around_x-small
+                                            slds-size_1-of-1
+                                            slds-large-size_2-of-3
+                                        "
+                                    >
+                                        <c-lightning-navigation-button
+                                            variant={buttonVariant1}
+                                            label={buttonLabel1}
+                                            navigation-type={buttonNavigationType1}
+                                            url={buttonUrl1}
+                                            stretch="true"
+                                        >
+                                        </c-lightning-navigation-button>
+                                    </div>
+                                </template>
+                                <template if:true={includeButton2}>
+                                    <div
+                                        class="
+                                            slds-col
+                                            slds-var-p-around_x-small
+                                            slds-size_1-of-1
+                                            slds-large-size_1-of-3
+                                        "
+                                    >
+                                        <c-lightning-navigation-button
+                                            variant={buttonVariant2}
+                                            label={buttonLabel2}
+                                            navigation-type={buttonNavigationType2}
+                                            url={buttonUrl2}
+                                            stretch="true"
+                                        >
+                                        </c-lightning-navigation-button>
+                                    </div>
+                                </template>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="
+                        slds-col
+                        slds-order_1
+                        slds-large-order_2
+                        slds-size_1-of-1
+                        slds-large-size_1-of-2
+                    "
+                >
+                    <div class="slds-carousel__image">
+                        <img src={url} alt={altText} />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>

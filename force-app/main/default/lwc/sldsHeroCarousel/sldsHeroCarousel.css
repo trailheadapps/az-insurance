@@ -1,0 +1,20 @@
+:host {
+    --dxp-c-anchor-color-background: var(--dxp-g-brand-3);
+}
+
+.max-width {
+    max-width: 71.25rem;
+    margin: auto;
+}
+
+.slds-carousel__panel-action {
+    border: none;
+}
+
+.slds-carousel__indicator-action:focus {
+    outline: unset;
+    -webkit-box-shadow: unset;
+    box-shadow: unset;
+    background-color: unset;
+    border-color: unset;
+}

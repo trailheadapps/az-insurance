@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>51.0</apiVersion>
+    <isExposed>true</isExposed>
+    <masterLabel>Lightning Record Form</masterLabel>
+    <description>atrative form which captures lead information</description>
+    <targets>
+        <target>lightningCommunity__Page</target>
+        <target>lightningCommunity__Default</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightningCommunity__Default">
+            <property
+                type="String"
+                name="title"
+                label="Title"
+                description="Title display text"
+            />
+            <property
+                type="String"
+                name="buttonLabel"
+                label="Button Label"
+                default="Get Quote"
+            />
+            <property
+                type="String"
+                name="redirectPageApiName"
+                label="Redirect Page API Name"
+                default="Home"
+            />
+            <property
+                type="ContentReference"
+                name="contentId1"
+                label="Content ID 1"
+                filter="cms_actionimage"
+            />
+            <property
+                type="String"
+                name="title1"
+                label="Image Title 1"
+                description="Title to show below the image."
+            />
+            <property
+                type="String"
+                name="action1"
+                label="Action value 1"
+                description="Value to submit for the action, also reflects the URL query parameter"
+            />
+            <property
+                type="ContentReference"
+                name="contentId2"
+                label="Content ID 2"
+                filter="cms_actionimage"
+            />
+            <property
+                type="String"
+                name="title2"
+                label="Image Title 2"
+                description="Title to show below the image."
+            />
+            <property
+                type="String"
+                name="action2"
+                label="Action value 2"
+                description="Value to submit for the action, also reflects the URL query parameter"
+            />
+            <property
+                type="ContentReference"
+                name="contentId3"
+                label="Content ID 3"
+                filter="cms_actionimage"
+            />
+            <property
+                type="String"
+                name="title3"
+                label="Image Title 3"
+                description="Title to show below the image."
+            />
+            <property
+                type="String"
+                name="action3"
+                label="Action value 3"
+                description="Value to submit for the action, also reflects the URL query parameter"
+            />
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>

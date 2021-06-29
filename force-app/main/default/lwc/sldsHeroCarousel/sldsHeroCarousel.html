@@ -1,0 +1,28 @@
+<template>
+    <div class="slds-grid slds-wrap max-width">
+        <div class="slds-col slds-size_1-of-1">
+            <lightning-carousel scroll-duration="6">
+                <template if:true={contentId1}>
+                    <c-slds-carousel-cms-panel
+                        content-id={contentId1}
+                    ></c-slds-carousel-cms-panel>
+                </template>
+                <template if:true={contentId2}>
+                    <c-slds-carousel-cms-panel
+                        content-id={contentId2}
+                    ></c-slds-carousel-cms-panel>
+                </template>
+                <template if:true={contentId3}>
+                    <c-slds-carousel-cms-panel
+                        content-id={contentId3}
+                    ></c-slds-carousel-cms-panel>
+                </template>
+            </lightning-carousel>
+        </div>
+        <div class="slds-col slds-align_absolute-center slds-size_1-of-1">
+            <c-cms-image-with-title
+                content-id={bannerContentId}
+            ></c-cms-image-with-title>
+        </div>
+    </div>
+</template>

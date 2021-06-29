@@ -1,0 +1,138 @@
+{
+    "appPageId": "24c5e29f-4104-4963-99c7-e83810aa4532",
+    "componentName": "community_layout:sldsFlexibleLayout",
+    "id": "bf0576b7-bca6-4c8b-96c4-ced3903e2d72",
+    "label": "Home",
+    "regions": [
+        {
+            "components": [
+                {
+                    "componentAttributes": {
+                        "sectionConfig": "{\"UUID\":\"ec4193ed-aa69-4cbc-a0d7-cc86e3f7e5ff\",\"columns\":[{\"UUID\":\"9f8c6a08-030e-499f-883d-073a387bfaef\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":[]}]}"
+                    },
+                    "componentName": "community_layout:section",
+                    "id": "ec4193ed-aa69-4cbc-a0d7-cc86e3f7e5ff",
+                    "regions": [
+                        {
+                            "components": [
+                                {
+                                    "componentAttributes": {
+                                        "bannerContentId": "MC5DIGOAIA3NBWJIPCCZANLTNIHE",
+                                        "contentId1": "MCG3GUULQWSBDR3N65F7YXBTJACM",
+                                        "contentId2": "MCMRRZXHYXCJHGBE5M22BBDWWIXM",
+                                        "contentId3": ""
+                                    },
+                                    "componentName": "c:sldsHeroCarousel",
+                                    "id": "ad24f203-ab0e-40ab-8717-3ac755369d16",
+                                    "renderPriority": "NEUTRAL",
+                                    "renditionMap": {},
+                                    "type": "component"
+                                },
+                                {
+                                    "componentAttributes": {
+                                        "contentId": "MCM2D4HLKZWFFZJNGK5KLH25U3TU",
+                                        "displayOrder": "Swapped",
+                                        "showBackgroundColor": true
+                                    },
+                                    "componentName": "c:cmsCustomizibleSection",
+                                    "id": "197a19b4-79ef-4b78-88a3-0bfdc961f0da",
+                                    "renderPriority": "NEUTRAL",
+                                    "renditionMap": {},
+                                    "type": "component"
+                                },
+                                {
+                                    "componentAttributes": {
+                                        "contentId": "MCQZKO43IZANBR3K4HPKLS2Q76IM",
+                                        "displayOrder": "default"
+                                    },
+                                    "componentName": "c:cmsCustomizibleSection",
+                                    "id": "faf37a00-17ed-4637-b1d1-17a5557eba34",
+                                    "renderPriority": "NEUTRAL",
+                                    "renditionMap": {},
+                                    "type": "component"
+                                }
+                            ],
+                            "id": "9f8c6a08-030e-499f-883d-073a387bfaef",
+                            "regionLabel": "Column 1",
+                            "regionName": "col1",
+                            "renditionMap": {},
+                            "type": "region"
+                        }
+                    ],
+                    "renderPriority": "NEUTRAL",
+                    "renditionMap": {},
+                    "scopedBrandingSetId": null,
+                    "type": "component"
+                },
+                {
+                    "componentAttributes": {
+                        "sectionConfig": "{\"UUID\":\"8e12722f-5946-4209-bac2-de3e1889d8d7\",\"columns\":[{\"UUID\":\"8dd0881f-3095-4f3b-9b0d-e222f67172a5\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":[]}]}"
+                    },
+                    "componentName": "community_layout:section",
+                    "id": "8e12722f-5946-4209-bac2-de3e1889d8d7",
+                    "regions": [
+                        {
+                            "components": [
+                                {
+                                    "componentAttributes": {
+                                        "buttonLabel1": "Get Insurance",
+                                        "buttonLabel2": "Get Insurance",
+                                        "buttonLabel3": "Get Insurance",
+                                        "contentId1": "MCMDIJIYTFZ5HDPLSC4PXUD3FVMU",
+                                        "contentId2": "MCB4O5EMYOJBC53DOAOKAUGJ75HY",
+                                        "contentId3": "MCVLS47HZ6IFE3VPPFP3IZEYVCHE",
+                                        "redirectPageApiName1": "get-a-quote?type=auto",
+                                        "redirectPageApiName2": "get-a-quote?type=home",
+                                        "redirectPageApiName3": "get-a-quote?type=pet",
+                                        "subTitle": "",
+                                        "title": "Flexible plans, guaranteed low prices"
+                                    },
+                                    "componentName": "c:cardsSectionWithHeader",
+                                    "id": "5bac46c8-8719-4c06-a6ca-cae061d5a8ff",
+                                    "renderPriority": "NEUTRAL",
+                                    "renditionMap": {},
+                                    "type": "component"
+                                }
+                            ],
+                            "id": "8dd0881f-3095-4f3b-9b0d-e222f67172a5",
+                            "regionLabel": "Column 1",
+                            "regionName": "col1",
+                            "renditionMap": {},
+                            "type": "region"
+                        }
+                    ],
+                    "renderPriority": "NEUTRAL",
+                    "renditionMap": {},
+                    "scopedBrandingSetId": null,
+                    "type": "component"
+                }
+            ],
+            "id": "ae86ff0e-12af-410a-ad54-cada36f112c8",
+            "regionName": "content",
+            "type": "region"
+        },
+        {
+            "components": [
+                {
+                    "componentAttributes": {
+                        "customHeadTags": "",
+                        "description": "",
+                        "pageTitle": "Home | AZ Insurance",
+                        "recordId": "{!recordId}"
+                    },
+                    "componentName": "community_builder:seoAssistant",
+                    "id": "b04532c1-db81-4cc8-b515-326db5774b4e",
+                    "renderPriority": "NEUTRAL",
+                    "renditionMap": {},
+                    "type": "component"
+                }
+            ],
+            "id": "9e9af9f6-4826-4e22-b4a9-84f9eb857e46",
+            "regionName": "sfdcHiddenRegion",
+            "type": "region"
+        }
+    ],
+    "themeLayoutType": "0qkAx12f7ZmTsOGK05UuODOy6CXlEq",
+    "type": "view",
+    "viewType": "home"
+}

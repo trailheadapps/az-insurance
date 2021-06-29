@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedContentType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Used to display actionable images</description>
+    <developerName>cms_actionimage</developerName>
+    <managedContentNodeTypes>
+        <helpText>This is the title for this action image.</helpText>
+        <isLocalizable>false</isLocalizable>
+        <isRequired>true</isRequired>
+        <nodeLabel>Title</nodeLabel>
+        <nodeName>title</nodeName>
+        <nodeType>NAMEFIELD</nodeType>
+    </managedContentNodeTypes>
+    <managedContentNodeTypes>
+        <helpText>This is the unselected image</helpText>
+        <isLocalizable>false</isLocalizable>
+        <isRequired>true</isRequired>
+        <nodeLabel>Unselected Image</nodeLabel>
+        <nodeName>unselectedImage</nodeName>
+        <nodeType>IMG</nodeType>
+    </managedContentNodeTypes>
+    <managedContentNodeTypes>
+        <helpText>This is the alt text for the unselected image.</helpText>
+        <isLocalizable>false</isLocalizable>
+        <isRequired>true</isRequired>
+        <nodeLabel>Alt text for unselected image</nodeLabel>
+        <nodeName>unselectedImageAltText</nodeName>
+        <nodeType>TEXT</nodeType>
+    </managedContentNodeTypes>
+    <managedContentNodeTypes>
+        <helpText>This is the selected image</helpText>
+        <isLocalizable>false</isLocalizable>
+        <isRequired>true</isRequired>
+        <nodeLabel>Selected Image</nodeLabel>
+        <nodeName>selectedImage</nodeName>
+        <nodeType>IMG</nodeType>
+    </managedContentNodeTypes>
+    <managedContentNodeTypes>
+        <helpText>This is the alt text for the selected image.</helpText>
+        <isLocalizable>false</isLocalizable>
+        <isRequired>true</isRequired>
+        <nodeLabel>Alt text for selected image</nodeLabel>
+        <nodeName>selectedImageAltText</nodeName>
+        <nodeType>TEXT</nodeType>
+    </managedContentNodeTypes>
+    <masterLabel>Actionable Image</masterLabel>
+</ManagedContentType>

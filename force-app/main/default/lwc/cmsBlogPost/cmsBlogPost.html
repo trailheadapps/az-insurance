@@ -1,0 +1,16 @@
+<template>
+    <div
+        class="slds-grid slds-grid_vertical slds-gutters_medium"
+        onclick={handleClick}
+    >
+        <div class="slds-col blog-image">
+            <img src={imageUrl} />
+        </div>
+        <div class="slds-col">
+            <h2>{title}</h2>
+        </div>
+        <div class="slds-col slds-var-p-vertical_large">
+            <p>{body}</p>
+        </div>
+    </div>
+</template>

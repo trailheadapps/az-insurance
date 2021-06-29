@@ -1,0 +1,17 @@
+.min-height {
+    min-height: 100px;
+}
+
+img:hover {
+    background-color: var(--dxp-g-brand-1);
+    border-radius: 16%;
+}
+
+.action {
+    cursor: pointer;
+}
+
+.selected {
+    background-color: var(--dxp-g-root-contrast-1);
+    border-radius: 16%;
+}

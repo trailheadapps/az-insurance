@@ -1,0 +1,24 @@
+<template>
+    <h2>{pageTitle}</h2>
+    <div class="blog-list">
+        <template for:each={blogs} for:item="blog">
+            <div key={blog.key} class="blog-tile">
+                <div
+                    class="slds-grid slds-grid_vertical slds-gutters_small"
+                    onclick={handleClick}
+                    data-id={blog.key}
+                >
+                    <div class="slds-col blog-image">
+                        <img src={blog.imageUrl} alt={blog.imageAltText} />
+                    </div>
+                    <div class="slds-col">
+                        <h4>{blog.title}</h4>
+                    </div>
+                    <div class="slds-col slds-var-p-vertical_small">
+                        <p>{blog.excerpt}</p>
+                    </div>
+                </div>
+            </div>
+        </template>
+    </div>
+</template>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>51.0</apiVersion>
+    <isExposed>true</isExposed>
+    <masterLabel>Cards Section With Header</masterLabel>
+    <description
+    >Display a group of CMS New content in card format with individual buttons</description>
+    <targets>
+        <target>lightningCommunity__Page</target>
+        <target>lightningCommunity__Default</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightningCommunity__Default">
+            <property
+                type="String"
+                name="title"
+                label="Header Title"
+                default="Header Text"
+            />
+            <property
+                type="String"
+                name="subTitle"
+                label="Header Sub Title"
+                default="Sub Title Text"
+            />
+            <property
+                type="ContentReference"
+                name="contentId1"
+                label="Content ID 1"
+                filter="news"
+            />
+            <property
+                type="String"
+                name="buttonLabel1"
+                label="Button Label 1"
+                default="Go now"
+            />
+            <property
+                type="String"
+                name="redirectPageApiName1"
+                label="Button Navigation Page API Name 1"
+                default="Home"
+            />
+            <property
+                type="ContentReference"
+                name="contentId2"
+                label="Content ID 2"
+                filter="news"
+            />
+            <property
+                type="String"
+                name="buttonLabel2"
+                label="Button Label 2"
+                default="Go now"
+            />
+            <property
+                type="String"
+                name="redirectPageApiName2"
+                label="Button Navigation Page API Name 2"
+                default="Home"
+            />
+            <property
+                type="ContentReference"
+                name="contentId3"
+                label="Content ID 3"
+                filter="news"
+            />
+            <property
+                type="String"
+                name="buttonLabel3"
+                label="Button Label 3"
+                default="Go now"
+            />
+            <property
+                type="String"
+                name="redirectPageApiName3"
+                label="Button Navigation Page API Name 3"
+                default="Home"
+            />
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>

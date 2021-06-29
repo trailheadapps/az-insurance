@@ -1,0 +1,13 @@
+article {
+    height: 100%;
+}
+
+.card_custom {
+    --sds-c-card-color-background: var(--dxp-g-neutral-contrast);
+}
+
+@media (min-width: 600px) {
+    .grid-height {
+        min-height: 320px;
+    }
+}

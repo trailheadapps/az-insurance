@@ -1,0 +1,15 @@
+<template>
+    <template if:false={hideComponent}>
+        <div class="slds-grid slds-grid_vertical slds-gutters_medium">
+            <div class="slds-col">
+                <h1>{title}</h1>
+            </div>
+            <div class="slds-col slds-var-p-vertical_large">
+                <p>{excerpt}</p>
+            </div>
+            <div class="slds-col">
+                <img src={url} />
+            </div>
+        </div>
+    </template>
+</template>

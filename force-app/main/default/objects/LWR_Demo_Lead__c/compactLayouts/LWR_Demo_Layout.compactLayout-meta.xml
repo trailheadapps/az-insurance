@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LWR_Demo_Layout</fullName>
+    <fields>First_Name__c</fields>
+    <fields>Last_Name__c</fields>
+    <fields>Address__c</fields>
+    <fields>Email__c</fields>
+    <fields>Quote_Type__c</fields>
+    <label>LWR Demo Layout</label>
+</CompactLayout>

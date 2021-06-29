@@ -1,0 +1,33 @@
+<template>
+    <article class="slds-card card_custom">
+        <div class="slds-card__body slds-card__body_inner">
+            <div class="slds-grid slds-grid_vertical grid-height">
+                <div
+                    class="
+                        slds-size_1-of-1
+                        slds-large-size_3-of-4
+                        slds-align_absolute-center
+                    "
+                >
+                    <h3 class="slds-text-align_center">{title}</h3>
+                </div>
+                <div class="slds-var-p-top_x-large">
+                    <p class="slds-text-align_center">{excerpt}</p>
+                </div>
+                <div class="slds-var-p-top_x-large">
+                    <h1 class="slds-text-align_center">{body}</h1>
+                </div>
+                <div class="slds-var-p-top_large slds-var-p-bottom_large">
+                    <button
+                        class="
+                            slds-button slds-button_brand slds-button_stretch
+                        "
+                        onclick={handleClick}
+                    >
+                        {buttonLabel}
+                    </button>
+                </div>
+            </div>
+        </div>
+    </article>
+</template>

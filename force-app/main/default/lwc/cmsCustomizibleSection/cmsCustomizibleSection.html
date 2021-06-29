@@ -1,0 +1,39 @@
+<template>
+    <div class={showBackgroundColor}>
+        <div class="slds-grid slds-wrap">
+            <template if:false={displayOrder}>
+                <div class={imageClass}>
+                    <img src={url} alt={altText} />
+                </div>
+            </template>
+            <div class={contentClass}>
+                <div class="slds-grid slds-wrap">
+                    <div
+                        class="
+                            slds-col
+                            slds-var-p-horizontal_large
+                            slds-size_1-of-1
+                        "
+                    >
+                        <h3>{title}</h3>
+                    </div>
+                    <div
+                        class="
+                            slds-col
+                            slds-var-p-horizontal_large
+                            slds-var-p-vertical_x-large
+                            slds-size_1-of-1
+                        "
+                    >
+                        <p>{excerpt}</p>
+                    </div>
+                </div>
+            </div>
+            <template if:true={displayOrder}>
+                <div class={imageClass}>
+                    <img src={url} alt={altText} />
+                </div>
+            </template>
+        </div>
+    </div>
+</template>
