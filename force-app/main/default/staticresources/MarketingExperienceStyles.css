@@ -1,11 +1,10 @@
 /**
 * Scoped to the root of the document and all its descendant elements.
 * Add this to the Header markup in Experience builder>Settings>Advanced>Edit Header: 
-* <link rel="stylesheet" href="/sfsites/c/resource/MarketingCommunitiesStyles" />
+* <link rel="stylesheet" href="/sfsites/c/resource/MarketingExperienceStyles" />
 */
 :root {
   /** Use --dxp-g to make broad changes **/
-  /**--dxp-g-root: #E5E5E5;**/
   --dxp-g-root: #fff;
   --dxp-g-root-contrast: #333333;
   --dxp-g-root-1: #F5F8F7;
