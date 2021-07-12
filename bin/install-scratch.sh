@@ -3,7 +3,7 @@ SCRIPT_PATH=$( cd "$(dirname "${BASH_SOURCE[0]}")" ; pwd -P )
 cd $SCRIPT_PATH/..
 
 # Set parameters
-ORG_ALIAS="ebikes"
+ORG_ALIAS="az-insurance"
 
 echo ""
 echo "Installing AZ Insurance scratch org ($ORG_ALIAS)"

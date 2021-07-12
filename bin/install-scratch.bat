@@ -1,7 +1,7 @@
 @echo OFF
 
 rem Set parameters
-set ORG_ALIAS=ebikes
+set ORG_ALIAS=az-insurance
 
 @echo:
 echo Installing AZ Insurance scratch org (%ORG_ALIAS%)
