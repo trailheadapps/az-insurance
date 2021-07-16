@@ -1,0 +1,150 @@
+/**
+    * Scoped to the root of the document and all its descendant elements.
+   */
+   :root {
+    /** Use --dxp-g to make broad changes **/
+    --dxp-g-root: #fff;
+    --dxp-g-root-contrast: #333333;
+    --dxp-g-root-1: #F5F8F7;
+    --dxp-g-root-2: #FCF7F2;
+    --dxp-g-root-contrast-1: #004C51;
+    --dxp-g-brand: #004C51;
+    --dxp-g-brand-contrast: #F5F6F8;
+    --dxp-g-brand-1: #008890;
+    --dxp-g-brand-2: #989898;
+    --dxp-g-brand-3: #B7C1BA;
+    --dxp-g-brand-contrast-1: #F5F6F8;
+    --dxp-g-neutral: #F1FAFC;
+    --dxp-g-neutral-contrast: #fff;
+    --dxp-g-neutral-1: #EBEEEC;
+    --dxp-g-footer-contrast: #2d3839;
+    /** set the font for all root/body text **/
+    --dxp-g-root-font-family: "Roboto",arial;
+    /** set the font for headings **/
+    --dxp-g-heading-font-family: 'DM Serif Display', sans-serif;
+    --dxp-g-text-heading_large: 4rem;
+
+    --dxp-c-anchor-text-color: #333;
+    --sds-c-button-radius-border: 1.5625rem;
+    --sds-c-button-brand-text-color-hover: var(--dxp-g-brand-1, #3A915D);
+
+    --dxp-c-section-content-spacing-inline-start: 5rem;
+    --dxp-c-section-content-spacing-inline-end: 5rem;
+    --dxp-c-header-container-spacing-inline-start: 5rem;
+    --dxp-c-header-container-spacing-inline-end: 5rem;
+    --dxp-c-footer-container-spacing-inline-start: 5rem;
+    --dxp-c-footer-container-spacing-inline-end: 5rem;
+   
+    --sds-c-button-brand-spacing-inline-start: 1.875rem;
+    --sds-c-button-brand-spacing-inline-end: 1.875rem;
+}
+
+.slds-button {
+    font-family: Futura;
+    font-size: 1.1667em;
+}
+
+@media only screen and (min-width: 48em) {
+    h1 {
+        font-family: DM Serif Display;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 4rem;
+        line-height: 3.75rem;
+        letter-spacing: 0.05em;
+    }
+    h2 {
+        font-family: DM Serif Display;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 3rem;
+        line-height: 3.75rem;
+        letter-spacing: 0.05em;
+    }
+    h3 {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 1.625rem;
+      line-height: 2.8125rem;
+      letter-spacing: 0.05em;
+    }
+    h4 {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 1.625rem;
+      line-height: 2.8125rem;
+      letter-spacing: 0.05em;
+    }
+}
+
+@media only screen and (max-width: 47.99em) {
+    h1 {
+        font-family: DM Serif Display;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 2.25rem;
+        line-height: 2.625rem;
+        letter-spacing: 0.05em;
+    }
+    h2 {
+        font-family: DM Serif Display;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 2rem;
+        line-height: 2.25rem;
+        letter-spacing: 0.05em;
+    }
+    h3 {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 1.5rem;
+      line-height: 2.25rem;
+      letter-spacing: 0.05em;
+    }
+    h4 {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 1.25rem;
+      line-height: 2.1875rem;
+      letter-spacing: 0.05em;
+    }
+}
+p {
+    letter-spacing: 0.03rem;
+}
+
+img {
+  vertical-align: middle;
+}
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* section backgroud */
+[community_layout-column_column-host][class*=col-size_] {
+  background: var(--dxp-g-root);
+}
+
+a {
+  color: var(--dxp-g-root-contrast);
+}
+
+/* Record Detail Styling */
+span.slds-form-element__label {
+  color: black;
+  font-size: 1em;
+  font-weight: bold;
+  padding-bottom: 1em;
+}
+
+.slds-form-element__static a {
+  color: black;
+  font-size: 1em;
+}
+
+.slds-form-element__static {
+  color: black;
+  font-size: 1em;
+}

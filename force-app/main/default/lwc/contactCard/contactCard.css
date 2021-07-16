@@ -1,0 +1,57 @@
+.buttonShape {
+    padding: 0.25rem 0.5rem 0.25rem 0.5rem;
+    border-radius: 20%/50%;
+    background-color: #f5f8f7;
+    color: #2e6541;
+    border-color: #f5f8f7;
+}
+
+@media (max-width: 768px) {
+    .buttonShape {
+        border-radius: 20%/80%;
+    }
+}
+
+@media (max-width: 425px) {
+    .buttonShape {
+        border-radius: 20%/65%;
+    }
+}
+
+@media (max-width: 320px) {
+    .buttonShape {
+        border-radius: 30%/70%;
+    }
+}
+
+img.profilePic {
+    border-radius: 50%;
+}
+
+h1.profileTitle {
+    font-size: 1.2rem;
+    padding-left: 4rem;
+}
+
+h2.profileName {
+    font-size: 1rem;
+}
+
+.profileAddress {
+    font-size: 0.8rem;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    overflow-wrap: normal;
+}
+
+.profileInfo {
+    padding-left: 5rem;
+}
+
+.profilePhone {
+    font-size: 0.8rem;
+}
+
+.profileRoot {
+    background-color: #fff;
+}

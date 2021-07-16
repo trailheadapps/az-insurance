@@ -1,0 +1,10 @@
+{
+    "activeViewId": "9620bf59-c1ea-4ec2-a570-61bf97bb1e5a",
+    "appPageId": "a33c9136-d66d-4d42-8731-3ea48cc00e8f",
+    "configurationTags": [],
+    "id": "801127db-2753-42a9-9106-17f397d5dba3",
+    "label": "ClaimsDetail",
+    "routeType": "custom-claimsdetail",
+    "type": "route",
+    "urlPrefix": "claims/claimsdetail"
+}

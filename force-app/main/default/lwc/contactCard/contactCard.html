@@ -1,0 +1,69 @@
+<template>
+    <h1 class="profileTitle slds-p-bottom_medium slds-text-align_left">
+        Your Agent
+    </h1>
+    <template if:true={agentPhoto}>
+        <img class="profilePic slds-align_absolute-center" src={agentPhoto} />
+    </template>
+    <div
+        class="
+            profileInfo
+            slds-p-top_small
+            slds-p-right_xx-large
+            slds-p-bottom_small
+        "
+    >
+        <template if:true={agentName}>
+            <h2 class="profileName slds-text-align_left">{agentName}</h2>
+        </template>
+        <template if:true={agentPhone}>
+            <p class="profilePhone slds-text-align_left">{agentPhone}</p>
+        </template>
+        <template if:true={agentStreet}>
+            <p class="profileAddress slds-text-align_left">{agentStreet},</p>
+            <p class="profileAddress slds-text-align_left">
+                {agentState}, {agentCity} {agentPostalCode}
+            </p>
+        </template>
+    </div>
+    <div class="slds-grid slds-grid_align-center slds-gutters">
+        <div
+            class="
+                slds-col
+                slds-size_1-of-3
+                slds-large-size_1-of-3
+                slds-medium-size_1-of-5
+            "
+        >
+            <a href={agentEmailTo}>
+                <button
+                    class="
+                        slds-button slds-button_neutral slds-button_stretch
+                        buttonShape
+                    "
+                >
+                    Email
+                </button>
+            </a>
+        </div>
+        <div
+            class="
+                slds-col
+                slds-size_1-of-3
+                slds-large-size_1-of-3
+                slds-medium-size_1-of-5
+            "
+        >
+            <a href={agentPhoneCallTo}>
+                <button
+                    class="
+                        slds-button slds-button_neutral slds-button_stretch
+                        buttonShape
+                    "
+                >
+                    Call
+                </button>
+            </a>
+        </div>
+    </div>
+</template>

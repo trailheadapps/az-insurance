@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>51.0</apiVersion>
+    <description>An information card for agents</description>
+    <isExposed>true</isExposed>
+    <masterLabel>Contact Card</masterLabel>
+    <targets>
+        <target>lightningCommunity__Page</target>
+    </targets>
+</LightningComponentBundle>

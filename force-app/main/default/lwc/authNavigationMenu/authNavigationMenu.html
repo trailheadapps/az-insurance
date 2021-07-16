@@ -1,0 +1,155 @@
+<template>
+    <!-- Vertical Navigation List for Mobile -->
+    <template if:true={showHamburgerMenu}>
+        <div class="slds-grid hamburger-menu-container">
+            <div class="slds-col slds-size_5-of-6">
+                <div
+                    class="
+                        slds-grid
+                        slds-var-p-left_small
+                        slds-var-p-top_small
+                        slds-grid_vertical
+                        hamburger-menu
+                    "
+                >
+                    <div
+                        class="slds-col slds-var-p-left_medium slds-size_1-of-4"
+                    >
+                        <c-navigation-menu-logo
+                            formfactor="hamburger"
+                            page="agent"
+                            onnavigation={handleNavigation}
+                        ></c-navigation-menu-logo>
+                    </div>
+                    <div class="slds-col">
+                        <span>
+                            <nav role="navigation" class="slds-nav-vertical">
+                                <ul class="slds-has-block-links_space">
+                                    <template
+                                        for:each={menuItems}
+                                        for:item="item"
+                                    >
+                                        <li key={item.id} class="navbar-items">
+                                            <c-navigation-menu-item
+                                                item={item}
+                                                onnavigation={handleNavigation}
+                                            ></c-navigation-menu-item>
+                                        </li>
+                                    </template>
+                                </ul>
+                            </nav>
+                        </span>
+                    </div>
+                    <div class="slds-col">
+                        <div class="slds-grid slds-grid_vertical slds-wrap">
+                            <span class="slds-col slds-var-p-top_small">
+                                <a
+                                    href="#"
+                                    class="navbar-items slds-var-p-left_small"
+                                    >Settings</a
+                                >
+                            </span>
+                            <span class="slds-col slds-var-p-top_small">
+                                <a
+                                    href="/customer/s"
+                                    class="navbar-items slds-var-p-left_small"
+                                    >My Account</a
+                                >
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slds-col slds-size_1-of-6">
+                <a href={href} onclick={handleHamburgerMenuToggle}
+                    ><img
+                        class="
+                            hamburger-menu-icon
+                            slds-var-p-left_small
+                            slds-var-p-top_small
+                        "
+                        src={xIcon}
+                /></a>
+            </div>
+        </div>
+    </template>
+    <div class="slds-grid slds-grid_vertical-align-center">
+        <div
+            class="
+                slds-col
+                slds-var-p-left_small
+                slds-var-p-top_small
+                slds-size_3-of-4
+                slds-large-size_1-of-5
+            "
+        >
+            <span>
+                <c-navigation-menu-logo
+                    formfactor="desktop"
+                    page="agent"
+                    onnavigation={handleNavigation}
+                ></c-navigation-menu-logo>
+            </span>
+        </div>
+        <div
+            class="
+                slds-col
+                slds-var-p-top_small
+                slds-var-p-horizontal_large
+                slds-show_large
+            "
+        >
+            <span>
+                <nav role="navigation">
+                    <ul class="slds-list_horizontal slds-has-block-links_space">
+                        <template for:each={menuItems} for:item="item">
+                            <li
+                                key={item.id}
+                                class="navbar-items slds-var-p-horizontal_large"
+                            >
+                                <c-navigation-menu-item
+                                    item={item}
+                                    onnavigation={handleNavigation}
+                                ></c-navigation-menu-item>
+                            </li>
+                        </template>
+                    </ul>
+                </nav>
+            </span>
+        </div>
+        <div
+            class="
+                slds-col
+                slds-var-p-top_small
+                slds-col_bump-left
+                slds-grid_align-center
+                slds-show_large
+            "
+        >
+            <div class="slds-grid slds-grid_reverse">
+                <div class="slds-col">
+                    <span>
+                        <a href="#" class="navbar-items"
+                            ><img src={profileIcon}
+                        /></a>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div
+            class="
+                slds-col
+                slds-var-p-top_small
+                slds-var-p-right_small
+                slds-hide_large
+            "
+        >
+            <a
+                class="slds-float_right"
+                href={href}
+                onclick={handleHamburgerMenuToggle}
+                ><img class="hamburger-menu-icon" src={hamburgerIcon}
+            /></a>
+        </div>
+    </div>
+</template>
