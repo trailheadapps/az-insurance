@@ -11,13 +11,6 @@
     <targetConfigs>
         <targetConfig targets="lightningCommunity__Default">
             <property
-                type="String"
-                name="recordId"
-                label="Record Id"
-                description="The id for the record"
-                default="{!recordId}"
-            />
-            <property
                 name="objectApiName"
                 type="String"
                 label="Object API Name"

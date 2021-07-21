@@ -26,6 +26,12 @@
                 description="The API Name of the list view you would like the table to represent"
             />
             <property
+                type="String"
+                name="detailPage"
+                label="Detail page for record"
+                description="The Experience Cloud page to open when a record is selected"
+            />
+            <property
                 type="Boolean"
                 name="showListViewLabel"
                 label="Show List View Label"

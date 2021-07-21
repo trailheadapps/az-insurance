@@ -1,25 +1,18 @@
-import { LightningElement, api } from 'lwc';
+import { LightningElement, api, wire } from 'lwc';
+import { CurrentPageReference } from 'lightning/navigation';
 
 export default class RecordDetail extends LightningElement {
-    @api recordId;
     @api
     set objectApiName(name) {
         switch (name) {
             //Case Lead render Lead layout
-            case 'Lead':
-                this.currentName = name;
+            case 'LWR_Demo_Lead__c':
+                this._currentName = name;
                 this.isLead = true;
-                this.isPolicy = false;
-                break;
-            //Case Policy__c render Policy__c layout
-            case 'Policy__c':
-                this.currentName = name;
-                this.isLead = false;
-                this.isPolicy = true;
                 break;
             //Case Neither do not Render
             default:
-                this.currentName = '';
+                this._currentName = '';
                 this.isLead = false;
                 this.isPolicy = false;
         }
@@ -28,9 +21,16 @@ export default class RecordDetail extends LightningElement {
         return this._currentName;
     }
 
+    @wire(CurrentPageReference)
+    pageReference({ state }) {
+        if (state && state.recordId) {
+            this.recordId = state.recordId;
+        }
+    }
+
     areDetailsVisible;
     isLead;
-    isPolicy;
+    recordId;
 
     _currentName;
 

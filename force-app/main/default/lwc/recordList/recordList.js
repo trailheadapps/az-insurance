@@ -3,7 +3,10 @@ import { NavigationMixin } from 'lightning/navigation';
 import { getListUi } from 'lightning/uiListApi';
 import { getObjectInfo } from 'lightning/uiObjectInfoApi';
 
+const actions = [{ label: 'Open record', name: 'open_record' }];
+
 export default class RecordList extends NavigationMixin(LightningElement) {
+    @api detailPage;
     @api listView;
     @api object;
     @api showListViewLabel;
@@ -14,6 +17,15 @@ export default class RecordList extends NavigationMixin(LightningElement) {
     fields;
     listViewLabel;
     records;
+
+    @wire(getObjectInfo, { objectApiName: '$object' })
+    objectInfo({ error, data }) {
+        if (data) {
+            this.fields = data.fields;
+        } else if (error) {
+            console.log(error);
+        }
+    }
 
     @wire(getListUi, {
         objectApiName: '$object',
@@ -32,16 +44,6 @@ export default class RecordList extends NavigationMixin(LightningElement) {
         }
     }
 
-    @wire(getObjectInfo, { objectApiName: '$object' })
-    objectInfo({ error, data }) {
-        if (data) {
-            this.fields = data.fields;
-        } else if (error) {
-            // TODO: Better error handling
-            console.log(error);
-        }
-    }
-
     get columns() {
         let columns = [];
         if (this.columnFields && this.fields) {
@@ -49,7 +51,6 @@ export default class RecordList extends NavigationMixin(LightningElement) {
                 let formattedField = {};
                 formattedField.label = field.label;
                 formattedField.fieldName = field.fieldApiName;
-                formattedField.type = this.fields[field.fieldApiName].dataType;
                 const dataType = this.fields[field.fieldApiName].dataType;
                 if (dataType === 'DateTime') {
                     formattedField.type = 'date-local';
@@ -57,6 +58,10 @@ export default class RecordList extends NavigationMixin(LightningElement) {
                     formattedField.type = dataType;
                 }
                 return formattedField;
+            });
+            columns.push({
+                type: 'action',
+                typeAttributes: { rowActions: actions }
             });
         }
         return columns;
@@ -74,49 +79,25 @@ export default class RecordList extends NavigationMixin(LightningElement) {
         return formattedRecords;
     }
 
-    handleClick(event) {
-        this[NavigationMixin.Navigate]({
-            type: 'standard__recordPage',
-            attributes: {
-                recordId: event.currentTarget.dataset.id,
-                objectApiName: this.objectInfo.data.apiName,
-                actionName: 'view'
-            }
-        });
+    handleRowAction(event) {
+        const actionName = event.detail.action.name;
+        const row = event.detail.row;
+        switch (actionName) {
+            case 'open_record':
+                this.actionOpenRecord(row);
+                break;
+            default:
+        }
     }
 
-    handleOpenList() {
+    actionOpenRecord(row) {
         this[NavigationMixin.Navigate]({
-            type: 'standard__objectPage',
+            type: 'comm__namedPage',
             attributes: {
-                objectApiName: 'LWR_Demo_Lead__c',
-                actionName: 'home'
-            }
-        });
-    }
-
-    handleOpenLead() {
-        this[NavigationMixin.Navigate]({
-            type: 'standard__objectPage',
-            attributes: {
-                objectApiName: 'LWR_Demo_Lead__c',
-                actionName: 'list'
+                name: this.detailPage
             },
             state: {
-                filterName: 'Recent'
-            }
-        });
-    }
-
-    handleCreateLead() {
-        this[NavigationMixin.Navigate]({
-            type: 'standard__objectPage',
-            attributes: {
-                objectApiName: 'Account',
-                actionName: 'new'
-            },
-            state: {
-                nooverride: '1'
+                recordId: row.Id
             }
         });
     }

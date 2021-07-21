@@ -25,11 +25,11 @@
                             ></lightning-output-field>
                             <div class="field-line"></div>
                             <lightning-output-field
-                                field-name="Company"
+                                field-name="First_Name__c"
                             ></lightning-output-field>
                             <div class="field-line"></div>
                             <lightning-output-field
-                                field-name="Title"
+                                field-name="Last_Name__c"
                             ></lightning-output-field>
                             <div class="field-line"></div>
                         </div>
@@ -41,91 +41,25 @@
                             "
                         >
                             <lightning-output-field
-                                field-name="Phone"
+                                field-name="Address__c"
                             ></lightning-output-field>
                             <div class="field-line"></div>
                             <lightning-output-field
-                                field-name="MobilePhone"
+                                field-name="Email__c"
                             ></lightning-output-field>
                             <div class="field-line"></div>
                             <lightning-output-field
-                                field-name="LeadSource"
+                                field-name="Status__c"
                             ></lightning-output-field>
                             <div class="field-line"></div>
                             <lightning-output-field
-                                field-name="Status"
+                                field-name="Quote_Type__c"
                             ></lightning-output-field>
                             <div class="field-line"></div>
                         </div>
                     </div>
                     <lightning-output-field
                         field-name="Description"
-                    ></lightning-output-field>
-                </article>
-            </template>
-        </lightning-record-edit-form>
-    </template>
-    <template if:true={isPolicy}>
-        <lightning-record-edit-form
-            record-id={recordId}
-            object-api-name={objectApiName}
-            density="comfy"
-            onload={handleLoad}
-        >
-            <template if:true={areDetailsVisible}>
-                <article class="slds-var-p-around_medium slds-card">
-                    <div class="slds-grid slds-gutters slds-wrap">
-                        <div
-                            class="
-                                slds-col
-                                slds-size_1-of-1
-                                slds-large-size_1-of-2
-                            "
-                        >
-                            <lightning-output-field
-                                field-name="OwnerId"
-                            ></lightning-output-field>
-                            <div class="field-line"></div>
-                            <lightning-output-field
-                                field-name="Name"
-                            ></lightning-output-field>
-                            <div class="field-line"></div>
-                            <lightning-output-field
-                                field-name="Company__c"
-                            ></lightning-output-field>
-                            <div class="field-line"></div>
-                            <lightning-output-field
-                                field-name="Title__c"
-                            ></lightning-output-field>
-                            <div class="field-line"></div>
-                        </div>
-                        <div
-                            class="
-                                slds-col
-                                slds-size_1-of-1
-                                slds-large-size_1-of-2
-                            "
-                        >
-                            <lightning-output-field
-                                field-name="Phone__c"
-                            ></lightning-output-field>
-                            <div class="field-line"></div>
-                            <lightning-output-field
-                                field-name="Mobile__c"
-                            ></lightning-output-field>
-                            <div class="field-line"></div>
-                            <lightning-output-field
-                                field-name="Lead_Type__c"
-                            ></lightning-output-field>
-                            <div class="field-line"></div>
-                            <lightning-output-field
-                                field-name="Stage__c"
-                            ></lightning-output-field>
-                            <div class="field-line"></div>
-                        </div>
-                    </div>
-                    <lightning-output-field
-                        field-name="Notes__c"
                     ></lightning-output-field>
                 </article>
             </template>

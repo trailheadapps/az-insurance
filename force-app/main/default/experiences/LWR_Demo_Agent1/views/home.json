@@ -17,6 +17,7 @@
                             "components": [
                                 {
                                     "componentAttributes": {
+                                        "detailPage": "LeadsDetail__c",
                                         "listView": "All",
                                         "object": "LWR_Demo_Lead__c",
                                         "showListViewLabel": true
