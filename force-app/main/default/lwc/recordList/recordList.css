@@ -1,0 +1,4 @@
+.slds-table thead th {
+    background-color: var(--dxp-g-root);
+    color: var(--dxp-g-root-contrast);
+}

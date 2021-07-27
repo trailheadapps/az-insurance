@@ -1,0 +1,72 @@
+{
+    "appPageId": "a33c9136-d66d-4d42-8731-3ea48cc00e8f",
+    "componentName": "community_layout:sldsFlexibleLayout",
+    "id": "3193ad75-16c7-4f6b-8843-c8e43de00bea",
+    "label": "Accounts",
+    "regions": [
+        {
+            "components": [
+                {
+                    "componentAttributes": {
+                        "sectionConfig": "{\"UUID\":\"6fe8e06b-678d-4c96-9f48-73d56b8ff6e4\",\"columns\":[{\"UUID\":\"3c325557-3c28-498c-afcc-03ac114b46ca\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":[]}]}"
+                    },
+                    "componentName": "community_layout:section",
+                    "id": "6fe8e06b-678d-4c96-9f48-73d56b8ff6e4",
+                    "regions": [
+                        {
+                            "components": [
+                                {
+                                    "componentAttributes": {
+                                        "listView": "All",
+                                        "object": "Account",
+                                        "showListViewLabel": true
+                                    },
+                                    "componentName": "c:recordList",
+                                    "id": "343bee55-7b54-4eb9-98c9-8aa482108762",
+                                    "renderPriority": "NEUTRAL",
+                                    "renditionMap": {},
+                                    "type": "component"
+                                }
+                            ],
+                            "id": "3c325557-3c28-498c-afcc-03ac114b46ca",
+                            "regionLabel": "Column 1",
+                            "regionName": "col1",
+                            "renditionMap": {},
+                            "type": "region"
+                        }
+                    ],
+                    "renderPriority": "NEUTRAL",
+                    "renditionMap": {},
+                    "scopedBrandingSetId": null,
+                    "type": "component"
+                }
+            ],
+            "id": "1c5cc750-961c-4e67-b8e3-d8e74cb2f83e",
+            "regionName": "content",
+            "type": "region"
+        },
+        {
+            "components": [
+                {
+                    "componentAttributes": {
+                        "customHeadTags": "",
+                        "description": "",
+                        "pageTitle": "Accounts",
+                        "recordId": "{!recordId}"
+                    },
+                    "componentName": "community_builder:seoAssistant",
+                    "id": "c2e6070e-3e2f-49ef-bfa7-feb929f74e57",
+                    "renderPriority": "NEUTRAL",
+                    "renditionMap": {},
+                    "type": "component"
+                }
+            ],
+            "id": "d0135be7-d06a-4bf1-a3e9-23e488830c32",
+            "regionName": "sfdcHiddenRegion",
+            "type": "region"
+        }
+    ],
+    "themeLayoutType": "qPPEyltdmAFdHizUuYfgzQ1rAzXqzy",
+    "type": "view",
+    "viewType": "custom-accounts"
+}

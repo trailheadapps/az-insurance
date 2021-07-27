@@ -19,7 +19,7 @@
     <genericErrorPage>Exception</genericErrorPage>
     <inMaintenancePage>InMaintenance</inMaintenancePage>
     <indexPage>CommunitiesLanding</indexPage>
-    <masterLabel>LWR Demo Marketing</masterLabel>
+    <masterLabel>LWR Demo Agent</masterLabel>
     <redirectToCustomDomain>false</redirectToCustomDomain>
     <referrerPolicyOriginWhenCrossOrigin
     >true</referrerPolicyOriginWhenCrossOrigin>
@@ -28,6 +28,6 @@
     <siteGuestRecordDefaultOwner
     >your.user@lwr.demo</siteGuestRecordDefaultOwner>
     <siteType>ChatterNetwork</siteType>
-    <subdomain>marketingsite</subdomain>
-    <urlPathPrefix>marketingsite</urlPathPrefix>
+    <subdomain>agentsite</subdomain>
+    <urlPathPrefix>agent</urlPathPrefix>
 </CustomSite>

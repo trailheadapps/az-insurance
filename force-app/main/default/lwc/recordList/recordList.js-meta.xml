@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>51.0</apiVersion>
+    <isExposed>true</isExposed>
+    <masterLabel>Record List</masterLabel>
+    <description
+    >Display a list of records from a given object and list view</description>
+    <targets>
+        <target>lightningCommunity__Page</target>
+        <target>lightningCommunity__Default</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightningCommunity__Default">
+            <property
+                type="String"
+                name="object"
+                label="Object API Name"
+                default="{!objectApiName}"
+                description="The API Name of the object you would like the table to represent"
+            />
+            <property
+                type="String"
+                name="listView"
+                label="List View API Name"
+                default="All"
+                description="The API Name of the list view you would like the table to represent"
+            />
+            <property
+                type="String"
+                name="detailPage"
+                label="Detail page for record"
+                description="The Experience Cloud page to open when a record is selected"
+            />
+            <property
+                type="Boolean"
+                name="showListViewLabel"
+                label="Show List View Label"
+                default="true"
+            />
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>

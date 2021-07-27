@@ -1,0 +1,72 @@
+{
+    "appPageId": "a33c9136-d66d-4d42-8731-3ea48cc00e8f",
+    "componentName": "community_layout:sldsFlexibleLayout",
+    "id": "f750032f-d1f3-4b3e-aec4-00a5f317f708",
+    "label": "Claims",
+    "regions": [
+        {
+            "components": [
+                {
+                    "componentAttributes": {
+                        "sectionConfig": "{\"UUID\":\"8437dc19-302b-4acd-8ee9-7c5936ccee86\",\"columns\":[{\"UUID\":\"d86b45bb-9451-41d9-b3d3-aeffa02e5e95\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":[]}]}"
+                    },
+                    "componentName": "community_layout:section",
+                    "id": "8437dc19-302b-4acd-8ee9-7c5936ccee86",
+                    "regions": [
+                        {
+                            "components": [
+                                {
+                                    "componentAttributes": {
+                                        "listView": "All",
+                                        "object": "Policy__c",
+                                        "showListViewLabel": true
+                                    },
+                                    "componentName": "c:recordList",
+                                    "id": "b947b3af-6970-43e2-972f-a5fa5780ecfb",
+                                    "renderPriority": "NEUTRAL",
+                                    "renditionMap": {},
+                                    "type": "component"
+                                }
+                            ],
+                            "id": "d86b45bb-9451-41d9-b3d3-aeffa02e5e95",
+                            "regionLabel": "Column 1",
+                            "regionName": "col1",
+                            "renditionMap": {},
+                            "type": "region"
+                        }
+                    ],
+                    "renderPriority": "NEUTRAL",
+                    "renditionMap": {},
+                    "scopedBrandingSetId": null,
+                    "type": "component"
+                }
+            ],
+            "id": "99ba4618-abcc-4729-b63d-a89c6e05d9c6",
+            "regionName": "content",
+            "type": "region"
+        },
+        {
+            "components": [
+                {
+                    "componentAttributes": {
+                        "customHeadTags": "",
+                        "description": "",
+                        "pageTitle": "Claims",
+                        "recordId": "{!recordId}"
+                    },
+                    "componentName": "community_builder:seoAssistant",
+                    "id": "2b6b10a0-9bcc-4d71-a684-d0e07a06901f",
+                    "renderPriority": "NEUTRAL",
+                    "renditionMap": {},
+                    "type": "component"
+                }
+            ],
+            "id": "5b595818-887f-47a5-a12d-35b9f93a4032",
+            "regionName": "sfdcHiddenRegion",
+            "type": "region"
+        }
+    ],
+    "themeLayoutType": "qPPEyltdmAFdHizUuYfgzQ1rAzXqzy",
+    "type": "view",
+    "viewType": "custom-claims"
+}

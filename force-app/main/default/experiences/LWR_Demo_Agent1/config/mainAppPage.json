@@ -1,0 +1,11 @@
+{
+    "cmsSettings": {},
+    "currentThemeId": "5e3ff81a-a124-4dda-84eb-0c98c38bfb6a",
+    "favIconAssetRef": null,
+    "headMarkup": "<meta charset=\"UTF-8\" />\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />\n<title>Welcome to LWC Communities!</title>\n\n<link rel=\"stylesheet\" href=\"{ basePath }/assets/styles/styles.css?{ versionKey }\" />\n\n\n<!-- webruntime-branding-shared stylesheets -->\n<link rel=\"stylesheet\" href=\"{ basePath }/assets/styles/salesforce-lightning-design-system.min.css?{ versionKey }\" />\n<link rel=\"stylesheet\" href=\"{ basePath }/assets/styles/dxp-site-spacing-styling-hooks.min.css?{ versionKey }\" />\n<!-- webruntime-branding-shared stylesheets -->\n<link rel=\"stylesheet\" href=\"{ basePath }/assets/styles/dxp-styling-hooks.min.css?{ versionKey }\" />\n<link rel=\"stylesheet\" href=\"{ basePath }/assets/styles/dxp-slds-extensions.min.css?{ versionKey }\" />\n<link rel=\"stylesheet\" href=\"/sfsites/c/resource/AgentCommunitiesStyles\" />",
+    "id": "a33c9136-d66d-4d42-8731-3ea48cc00e8f",
+    "isRelaxedCSPLevel": false,
+    "label": "main",
+    "templateName": "talon-template-byo",
+    "type": "appPage"
+}

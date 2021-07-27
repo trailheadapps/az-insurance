@@ -1,0 +1,72 @@
+{
+    "appPageId": "a33c9136-d66d-4d42-8731-3ea48cc00e8f",
+    "componentName": "community_layout:sldsFlexibleLayout",
+    "id": "41fc0bed-052e-4ac1-a374-09f79873b173",
+    "label": "Leads",
+    "regions": [
+        {
+            "components": [
+                {
+                    "componentAttributes": {
+                        "sectionConfig": "{\"UUID\":\"f52c52f0-2e06-4f5f-9f91-1d3eac9245c3\",\"columns\":[{\"UUID\":\"3cd2eb2a-4365-4912-b072-d8fad4a64dcd\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":[]}]}"
+                    },
+                    "componentName": "community_layout:section",
+                    "id": "f52c52f0-2e06-4f5f-9f91-1d3eac9245c3",
+                    "regions": [
+                        {
+                            "components": [
+                                {
+                                    "componentAttributes": {
+                                        "listView": "All",
+                                        "object": "LWR_Demo_Lead__c",
+                                        "showListViewLabel": true
+                                    },
+                                    "componentName": "c:recordList",
+                                    "id": "2b5cbcbc-9380-43f9-8423-0eac3e584ef2",
+                                    "renderPriority": "NEUTRAL",
+                                    "renditionMap": {},
+                                    "type": "component"
+                                }
+                            ],
+                            "id": "3cd2eb2a-4365-4912-b072-d8fad4a64dcd",
+                            "regionLabel": "Column 1",
+                            "regionName": "col1",
+                            "renditionMap": {},
+                            "type": "region"
+                        }
+                    ],
+                    "renderPriority": "NEUTRAL",
+                    "renditionMap": {},
+                    "scopedBrandingSetId": null,
+                    "type": "component"
+                }
+            ],
+            "id": "6e962aa7-a6d8-4ba5-b39d-caaed24bc674",
+            "regionName": "content",
+            "type": "region"
+        },
+        {
+            "components": [
+                {
+                    "componentAttributes": {
+                        "customHeadTags": "",
+                        "description": "",
+                        "pageTitle": "Leads",
+                        "recordId": "{!recordId}"
+                    },
+                    "componentName": "community_builder:seoAssistant",
+                    "id": "fa84b94e-06db-49b0-b08b-3e59731e64bc",
+                    "renderPriority": "NEUTRAL",
+                    "renditionMap": {},
+                    "type": "component"
+                }
+            ],
+            "id": "5df26be9-42c6-4c0e-949f-f90f11a081a7",
+            "regionName": "sfdcHiddenRegion",
+            "type": "region"
+        }
+    ],
+    "themeLayoutType": "qPPEyltdmAFdHizUuYfgzQ1rAzXqzy",
+    "type": "view",
+    "viewType": "custom-leads"
+}

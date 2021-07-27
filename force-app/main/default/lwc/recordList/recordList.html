@@ -1,0 +1,35 @@
+<template>
+    <div class="slds-grid slds-wrap">
+        <template if:true={error}>
+            <c-error-panel errors={error}></c-error-panel>
+        </template>
+        <template if:false={error}>
+            <div class="slds-col slds-var-p-bottom_x-large slds-size_1-of-1">
+                <div class="slds-grid slds-wrap">
+                    <div class="slds-col slds-size_1-of-2">
+                        <div class="slds-grid slds-wrap">
+                            <div
+                                if:true={showListViewLabel}
+                                class="slds-col slds-size_1-of-1"
+                            >
+                                <h4 if:true={objectInfo.data}>
+                                    {objectInfo.data.labelPlural}
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slds-col slds-size_1-of-1">
+                <lightning-datatable
+                    key-field="Id"
+                    data={customTableData}
+                    columns={columns}
+                    onrowaction={handleRowAction}
+                    hide-checkbox-column
+                >
+                </lightning-datatable>
+            </div>
+        </template>
+    </div>
+</template>

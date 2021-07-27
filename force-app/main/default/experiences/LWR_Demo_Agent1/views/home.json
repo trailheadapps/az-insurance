@@ -1,0 +1,73 @@
+{
+    "appPageId": "a33c9136-d66d-4d42-8731-3ea48cc00e8f",
+    "componentName": "community_layout:sldsFlexibleLayout",
+    "id": "4d8ff5f0-7077-4c24-a1ef-4ea91e2953e3",
+    "label": "Home",
+    "regions": [
+        {
+            "components": [
+                {
+                    "componentAttributes": {
+                        "sectionConfig": "{\"UUID\":\"8f5c4a71-ce52-48e7-955a-5ae6c1b0a50e\",\"columns\":[{\"UUID\":\"b2bea078-d6be-4032-97b1-0404cf82f809\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":null}]}"
+                    },
+                    "componentName": "community_layout:section",
+                    "id": "8f5c4a71-ce52-48e7-955a-5ae6c1b0a50e",
+                    "regions": [
+                        {
+                            "components": [
+                                {
+                                    "componentAttributes": {
+                                        "detailPage": "LeadsDetail__c",
+                                        "listView": "All",
+                                        "object": "LWR_Demo_Lead__c",
+                                        "showListViewLabel": true
+                                    },
+                                    "componentName": "c:recordList",
+                                    "id": "41677d39-5b13-40c4-b72c-8c518b9c28a7",
+                                    "renderPriority": "NEUTRAL",
+                                    "renditionMap": {},
+                                    "type": "component"
+                                }
+                            ],
+                            "id": "b2bea078-d6be-4032-97b1-0404cf82f809",
+                            "regionLabel": "Column 1",
+                            "regionName": "col1",
+                            "renditionMap": {},
+                            "type": "region"
+                        }
+                    ],
+                    "renderPriority": "NEUTRAL",
+                    "renditionMap": {},
+                    "scopedBrandingSetId": null,
+                    "type": "component"
+                }
+            ],
+            "id": "8fb4e6d5-158a-4fcb-aae9-2f1352115b4f",
+            "regionName": "content",
+            "type": "region"
+        },
+        {
+            "components": [
+                {
+                    "componentAttributes": {
+                        "customHeadTags": "",
+                        "description": "",
+                        "pageTitle": "Agent Portal",
+                        "recordId": "{!recordId}"
+                    },
+                    "componentName": "community_builder:seoAssistant",
+                    "id": "c643cdfc-b680-42a3-bf16-111fafdb2778",
+                    "renderPriority": "NEUTRAL",
+                    "renditionMap": {},
+                    "type": "component"
+                }
+            ],
+            "id": "76ca22b1-6df9-475a-b092-63a510142816",
+            "regionName": "sfdcHiddenRegion",
+            "type": "region"
+        }
+    ],
+    "themeLayoutType": "qPPEyltdmAFdHizUuYfgzQ1rAzXqzy",
+    "type": "view",
+    "viewType": "home"
+}

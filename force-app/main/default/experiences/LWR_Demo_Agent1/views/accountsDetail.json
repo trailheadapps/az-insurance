@@ -1,0 +1,58 @@
+{
+    "appPageId": "a33c9136-d66d-4d42-8731-3ea48cc00e8f",
+    "componentName": "community_layout:sldsFlexibleLayout",
+    "id": "e5e22645-ad75-49a8-b077-f20a6e4f149a",
+    "label": "AccountsDetail",
+    "regions": [
+        {
+            "components": [
+                {
+                    "componentAttributes": {
+                        "sectionConfig": "{\"UUID\":\"a051280b-2b91-4f1d-a781-8c26b6dc1850\",\"columns\":[{\"UUID\":\"1fa16319-c28e-4412-960d-7a5b1a7fe152\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":[]}]}"
+                    },
+                    "componentName": "community_layout:section",
+                    "id": "a051280b-2b91-4f1d-a781-8c26b6dc1850",
+                    "regions": [
+                        {
+                            "id": "1fa16319-c28e-4412-960d-7a5b1a7fe152",
+                            "regionLabel": "Column 1",
+                            "regionName": "col1",
+                            "renditionMap": {},
+                            "type": "region"
+                        }
+                    ],
+                    "renderPriority": "NEUTRAL",
+                    "renditionMap": {},
+                    "scopedBrandingSetId": null,
+                    "type": "component"
+                }
+            ],
+            "id": "f64aea34-c060-4aa6-9d95-2360453ad81b",
+            "regionName": "content",
+            "type": "region"
+        },
+        {
+            "components": [
+                {
+                    "componentAttributes": {
+                        "customHeadTags": "",
+                        "description": "",
+                        "pageTitle": "AccountsDetail",
+                        "recordId": "{!recordId}"
+                    },
+                    "componentName": "community_builder:seoAssistant",
+                    "id": "2d10a3f9-cea7-44d6-a81c-0f17a186a80c",
+                    "renderPriority": "NEUTRAL",
+                    "renditionMap": {},
+                    "type": "component"
+                }
+            ],
+            "id": "fb687f90-984d-4589-be07-52009fc57ff2",
+            "regionName": "sfdcHiddenRegion",
+            "type": "region"
+        }
+    ],
+    "themeLayoutType": "qPPEyltdmAFdHizUuYfgzQ1rAzXqzy",
+    "type": "view",
+    "viewType": "custom-accountsdetail"
+}

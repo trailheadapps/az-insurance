@@ -1,0 +1,68 @@
+<template>
+    <template if:true={isLead}>
+        <lightning-record-edit-form
+            record-id={recordId}
+            object-api-name={objectApiName}
+            density="comfy"
+            onload={handleLoad}
+        >
+            <template if:true={areDetailsVisible}>
+                <article class="slds-var-p-around_medium slds-card">
+                    <div class="slds-grid slds-gutters slds-wrap">
+                        <div
+                            class="
+                                slds-col
+                                slds-size_1-of-1
+                                slds-large-size_1-of-2
+                            "
+                        >
+                            <lightning-output-field
+                                field-name="OwnerId"
+                            ></lightning-output-field>
+                            <div class="field-line"></div>
+                            <lightning-output-field
+                                field-name="Name"
+                            ></lightning-output-field>
+                            <div class="field-line"></div>
+                            <lightning-output-field
+                                field-name="First_Name__c"
+                            ></lightning-output-field>
+                            <div class="field-line"></div>
+                            <lightning-output-field
+                                field-name="Last_Name__c"
+                            ></lightning-output-field>
+                            <div class="field-line"></div>
+                        </div>
+                        <div
+                            class="
+                                slds-col
+                                slds-size_1-of-1
+                                slds-large-size_1-of-2
+                            "
+                        >
+                            <lightning-output-field
+                                field-name="Address__c"
+                            ></lightning-output-field>
+                            <div class="field-line"></div>
+                            <lightning-output-field
+                                field-name="Email__c"
+                            ></lightning-output-field>
+                            <div class="field-line"></div>
+                            <lightning-output-field
+                                field-name="Status__c"
+                            ></lightning-output-field>
+                            <div class="field-line"></div>
+                            <lightning-output-field
+                                field-name="Quote_Type__c"
+                            ></lightning-output-field>
+                            <div class="field-line"></div>
+                        </div>
+                    </div>
+                    <lightning-output-field
+                        field-name="Description"
+                    ></lightning-output-field>
+                </article>
+            </template>
+        </lightning-record-edit-form>
+    </template>
+</template>

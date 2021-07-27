@@ -1,30 +1,30 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <Network xmlns="http://soap.sforce.com/2006/04/metadata">
-    <allowInternalUserLogin>false</allowInternalUserLogin>
+    <allowInternalUserLogin>true</allowInternalUserLogin>
     <allowMembersToFlag>false</allowMembersToFlag>
     <changePasswordTemplate
     >unfiled$public/CommunityChangePasswordEmailTemplate</changePasswordTemplate>
     <communityRoles />
     <disableReputationRecordConversations
-    >false</disableReputationRecordConversations>
+    >true</disableReputationRecordConversations>
     <emailSenderAddress>wesley.dike@oktana.com</emailSenderAddress>
-    <emailSenderName>LWR Demo Marketing</emailSenderName>
+    <emailSenderName>LWR Demo Agent</emailSenderName>
     <enableCustomVFErrorPageOverrides>false</enableCustomVFErrorPageOverrides>
-    <enableDirectMessages>false</enableDirectMessages>
+    <enableDirectMessages>true</enableDirectMessages>
     <enableExperienceBundleBasedSnaOverrideEnabled
     >true</enableExperienceBundleBasedSnaOverrideEnabled>
-    <enableGuestChatter>true</enableGuestChatter>
-    <enableGuestFileAccess>true</enableGuestFileAccess>
+    <enableGuestChatter>false</enableGuestChatter>
+    <enableGuestFileAccess>false</enableGuestFileAccess>
     <enableGuestMemberVisibility>false</enableGuestMemberVisibility>
     <enableInvitation>false</enableInvitation>
     <enableKnowledgeable>false</enableKnowledgeable>
     <enableMemberVisibility>false</enableMemberVisibility>
-    <enableNicknameDisplay>false</enableNicknameDisplay>
+    <enableNicknameDisplay>true</enableNicknameDisplay>
     <enablePrivateMessages>false</enablePrivateMessages>
     <enableReputation>false</enableReputation>
     <enableShowAllNetworkSettings>false</enableShowAllNetworkSettings>
     <enableSiteAsContainer>true</enableSiteAsContainer>
-    <enableTalkingAboutStats>false</enableTalkingAboutStats>
+    <enableTalkingAboutStats>true</enableTalkingAboutStats>
     <enableTopicAssignmentRules>true</enableTopicAssignmentRules>
     <enableTopicSuggestions>false</enableTopicSuggestions>
     <enableUpDownVote>false</enableUpDownVote>
@@ -44,16 +44,16 @@
         <selfRegProfilePageOverrideSetting
         >Designer</selfRegProfilePageOverrideSetting>
     </networkPageOverrides>
-    <picassoSite>LWR_Demo_Marketing1</picassoSite>
+    <picassoSite>LWR_Demo_Agent1</picassoSite>
     <selfRegistration>false</selfRegistration>
     <sendWelcomeEmail>true</sendWelcomeEmail>
-    <site>LWR_Demo_Marketing</site>
+    <site>LWR_Demo_Agent</site>
     <status>UnderConstruction</status>
     <tabs>
         <defaultTab>home</defaultTab>
         <standardTab>Chatter</standardTab>
     </tabs>
-    <urlPathPrefix>marketingsite</urlPathPrefix>
+    <urlPathPrefix>agent</urlPathPrefix>
     <welcomeTemplate
     >unfiled$public/CommunityWelcomeEmailTemplate</welcomeTemplate>
 </Network>

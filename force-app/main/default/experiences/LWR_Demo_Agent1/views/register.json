@@ -1,0 +1,86 @@
+{
+    "appPageId": "a33c9136-d66d-4d42-8731-3ea48cc00e8f",
+    "componentName": "community_layout:sldsFlexibleLayout",
+    "id": "51a69515-23cb-49b1-8f3e-823dcaaa2f3f",
+    "label": "Register",
+    "regions": [
+        {
+            "components": [
+                {
+                    "componentAttributes": {
+                        "sectionConfig": "{\"UUID\":\"c9e40eb6-266f-4fc8-9e7c-b7691a0f9123\",\"columns\":[{\"UUID\":\"88831d08-7125-44e8-85b0-42e7e56775bd\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":null}]}"
+                    },
+                    "componentName": "community_layout:section",
+                    "id": "c9e40eb6-266f-4fc8-9e7c-b7691a0f9123",
+                    "regions": [
+                        {
+                            "components": [
+                                {
+                                    "componentAttributes": {},
+                                    "componentName": "community_login:communityLogo",
+                                    "id": "29657274-d575-447f-bcd4-c0dec3fa835a",
+                                    "renderPriority": "NEUTRAL",
+                                    "renditionMap": {},
+                                    "type": "component"
+                                },
+                                {
+                                    "componentAttributes": {
+                                        "cancelLinkLabel": "Already have an account?",
+                                        "confirmPasswordLabel": "Confirm Password",
+                                        "emailLabel": "Email",
+                                        "firstnameLabel": "First Name",
+                                        "includePasswordField": true,
+                                        "lastnameLabel": "Last Name",
+                                        "passwordLabel": "Create Password",
+                                        "regConfirmUrl": "./CheckPasswordResetEmail",
+                                        "submitButtonLabel": "Sign Up"
+                                    },
+                                    "componentName": "community_login:selfRegister",
+                                    "id": "553b7df2-385a-4b7e-a6ef-dae4011a4e12",
+                                    "renderPriority": "NEUTRAL",
+                                    "renditionMap": {},
+                                    "type": "component"
+                                }
+                            ],
+                            "id": "88831d08-7125-44e8-85b0-42e7e56775bd",
+                            "regionLabel": "Column 1",
+                            "regionName": "col1",
+                            "renditionMap": {},
+                            "type": "region"
+                        }
+                    ],
+                    "renderPriority": "NEUTRAL",
+                    "renditionMap": {},
+                    "scopedBrandingSetId": null,
+                    "type": "component"
+                }
+            ],
+            "id": "bced653b-1f00-4c13-b244-b27abe64b3e8",
+            "regionName": "content",
+            "type": "region"
+        },
+        {
+            "components": [
+                {
+                    "componentAttributes": {
+                        "customHeadTags": "",
+                        "description": "",
+                        "pageTitle": "Register",
+                        "recordId": "{!recordId}"
+                    },
+                    "componentName": "community_builder:seoAssistant",
+                    "id": "7ad853d5-1e99-4e27-986f-de3d82b178a6",
+                    "renderPriority": "NEUTRAL",
+                    "renditionMap": {},
+                    "type": "component"
+                }
+            ],
+            "id": "34d0b5e9-7d53-4c90-95b9-efdbf0157e25",
+            "regionName": "sfdcHiddenRegion",
+            "type": "region"
+        }
+    ],
+    "themeLayoutType": "qPPEyltdmAFdHizUuYfgzQ1rAzXqzy",
+    "type": "view",
+    "viewType": "self-register"
+}

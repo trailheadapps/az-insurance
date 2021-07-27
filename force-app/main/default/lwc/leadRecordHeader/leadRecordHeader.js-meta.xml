@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>51.0</apiVersion>
+    <isExposed>true</isExposed>
+    <masterLabel>Demo Lead Detail Header</masterLabel>
+    <description>Demo Lead detail page header</description>
+    <targets>
+        <target>lightningCommunity__Page</target>
+        <target>lightningCommunity__Default</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightningCommunity__Default">
+            <property
+                name="recordId"
+                type="String"
+                default="{!recordId}"
+                label="Record ID"
+                description="The record id of the record information to display. Use {!recordId} to get the given id from a record detail page."
+            />
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>

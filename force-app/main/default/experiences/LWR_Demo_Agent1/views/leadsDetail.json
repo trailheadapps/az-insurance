@@ -1,0 +1,70 @@
+{
+    "appPageId": "a33c9136-d66d-4d42-8731-3ea48cc00e8f",
+    "componentName": "community_layout:sldsFlexibleLayout",
+    "id": "a2868ff6-c364-4f78-a7ca-94fca6a4fdaa",
+    "label": "LeadsDetail",
+    "regions": [
+        {
+            "components": [
+                {
+                    "componentAttributes": {
+                        "sectionConfig": "{\"UUID\":\"33887675-acc4-4285-b4bb-0d2a186f2997\",\"columns\":[{\"UUID\":\"692c7771-a7c0-4741-a4c3-96b05182fa33\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":[]}]}"
+                    },
+                    "componentName": "community_layout:section",
+                    "id": "33887675-acc4-4285-b4bb-0d2a186f2997",
+                    "regions": [
+                        {
+                            "components": [
+                                {
+                                    "componentAttributes": {
+                                        "objectApiName": "LWR_Demo_Lead__c"
+                                    },
+                                    "componentName": "c:recordDetail",
+                                    "id": "9c1a6e26-1369-4c16-a496-674a896fc29b",
+                                    "renderPriority": "NEUTRAL",
+                                    "renditionMap": {},
+                                    "type": "component"
+                                }
+                            ],
+                            "id": "692c7771-a7c0-4741-a4c3-96b05182fa33",
+                            "regionLabel": "Column 1",
+                            "regionName": "col1",
+                            "renditionMap": {},
+                            "type": "region"
+                        }
+                    ],
+                    "renderPriority": "NEUTRAL",
+                    "renditionMap": {},
+                    "scopedBrandingSetId": null,
+                    "type": "component"
+                }
+            ],
+            "id": "f5c0b75e-6db7-4635-9c4c-99fee89939ea",
+            "regionName": "content",
+            "type": "region"
+        },
+        {
+            "components": [
+                {
+                    "componentAttributes": {
+                        "customHeadTags": "",
+                        "description": "",
+                        "pageTitle": "LeadsDetail",
+                        "recordId": "{!recordId}"
+                    },
+                    "componentName": "community_builder:seoAssistant",
+                    "id": "0934213d-621b-446b-a2f9-380761c7d83b",
+                    "renderPriority": "NEUTRAL",
+                    "renditionMap": {},
+                    "type": "component"
+                }
+            ],
+            "id": "21ed899a-73be-4b52-9c90-f3e10629d4b9",
+            "regionName": "sfdcHiddenRegion",
+            "type": "region"
+        }
+    ],
+    "themeLayoutType": "qPPEyltdmAFdHizUuYfgzQ1rAzXqzy",
+    "type": "view",
+    "viewType": "custom-leadsdetail"
+}

@@ -1,0 +1,58 @@
+{
+    "appPageId": "a33c9136-d66d-4d42-8731-3ea48cc00e8f",
+    "componentName": "community_layout:sldsFlexibleLayout",
+    "id": "9620bf59-c1ea-4ec2-a570-61bf97bb1e5a",
+    "label": "ClaimsDetail",
+    "regions": [
+        {
+            "components": [
+                {
+                    "componentAttributes": {
+                        "sectionConfig": "{\"UUID\":\"fa32c453-8705-4d0c-88be-0b0f6bf9a7c3\",\"columns\":[{\"UUID\":\"e90bc136-1df5-4bc1-bde8-c9e4f30836bf\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":[]}]}"
+                    },
+                    "componentName": "community_layout:section",
+                    "id": "fa32c453-8705-4d0c-88be-0b0f6bf9a7c3",
+                    "regions": [
+                        {
+                            "id": "e90bc136-1df5-4bc1-bde8-c9e4f30836bf",
+                            "regionLabel": "Column 1",
+                            "regionName": "col1",
+                            "renditionMap": {},
+                            "type": "region"
+                        }
+                    ],
+                    "renderPriority": "NEUTRAL",
+                    "renditionMap": {},
+                    "scopedBrandingSetId": null,
+                    "type": "component"
+                }
+            ],
+            "id": "30d0c009-6692-422a-b9cf-c798d10d3d3a",
+            "regionName": "content",
+            "type": "region"
+        },
+        {
+            "components": [
+                {
+                    "componentAttributes": {
+                        "customHeadTags": "",
+                        "description": "",
+                        "pageTitle": "ClaimsDetail",
+                        "recordId": "{!recordId}"
+                    },
+                    "componentName": "community_builder:seoAssistant",
+                    "id": "435534ff-5c5e-4a76-b374-4754f3d13a31",
+                    "renderPriority": "NEUTRAL",
+                    "renditionMap": {},
+                    "type": "component"
+                }
+            ],
+            "id": "55306311-c141-4554-964f-779f7502eb48",
+            "regionName": "sfdcHiddenRegion",
+            "type": "region"
+        }
+    ],
+    "themeLayoutType": "qPPEyltdmAFdHizUuYfgzQ1rAzXqzy",
+    "type": "view",
+    "viewType": "custom-claimsdetail"
+}

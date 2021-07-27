@@ -18,11 +18,11 @@ echo "Creating scratch org..."
 #vsfdx force:org:create -s -f config/project-scratch-def.json -d 30 -a $ORG_ALIAS
 echo ""
 
-echo "Creating dummy Community..."
+echo "Creating dummy Experience site..."
 sfdx force:community:create --name "Some Test" --templatename "Aloha" -p "somesome"
 echo ""
 
-echo "Sleeping 30s for Community deployment"
+echo "Sleeping 30s for Experience site deployment"
 sleep 30
 echo ""
 
@@ -30,7 +30,7 @@ echo "Deploying standard metadata..."
 sfdx force:source:deploy -m ApexClass,Layout,CustomObject,LightningComponentBundle,ManagedContentType,CustomObject,StaticResource,CustomTab,PermissionSet,Flow
 echo ""
 
-echo "Deploying community metadata..."
+echo "Deploying Experience site metadata..."
 sfdx force:source:deploy -m ApexPage,CustomSite,ExperienceBundle,NavigationMenu,Network,Profile
 echo ""
 
@@ -40,10 +40,6 @@ echo ""
 
 echo "Publishing Marketing Site..."
 sfdx force:community:publish -n "LWR Demo Marketing" 
-echo ""
-
-echo "Publishing Customer Portal..."
-sfdx force:community:publish -n "CustomerPortal"
 echo ""
 
 echo "Publishing Agent Portal..."
