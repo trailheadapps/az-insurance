@@ -42,6 +42,10 @@ echo "Publishing Marketing Site..."
 sfdx force:community:publish -n "LWR Demo Marketing" 
 echo ""
 
+echo "Publishing Agent Portal..."
+sfdx force:community:publish -n "LWR Demo Marketing" 
+echo ""
+
 echo "Opening org..." && \
 sfdx force:org:open
 echo ""

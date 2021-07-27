@@ -37,8 +37,13 @@ echo Assigning permission set for Marketing Site Builder
 cmd.exe /c sfdx force:user:permset:assign -n LWR_Marketing_Builder
 @echo:
 
-echo Publishing Community...
+echo Publishing Marketing Site...
 cmd.exe /c sfdx force:community:publish -n "LWR Demo Marketing" 
+call :checkForError
+@echo:
+
+echo Publishing Agent Portal...
+cmd.exe /c sfdx force:community:publish -n "LWR Demo Agent" 
 call :checkForError
 @echo:
 
@@ -47,7 +52,6 @@ rem Report install success if no error
 if ["%errorlevel%"]==["0"] (
   echo Installation completed.
   @echo:
-  cmd.exe /c sfdx force:org:open -p lightning/n/Product_Explorer
 )
 
 :: ======== FN ======
