@@ -2,7 +2,7 @@
 
 [![Github Workflow](<https://github.com/trailheadapps/az-insurance/workflows/Salesforce%20DX%20(scratch%20org)/badge.svg?branch=main>)](https://github.com/trailheadapps/az-insurance/actions?query=workflow%3A%22Salesforce+DX+%28scratch+org%29%22)
 
-AZ Insurance is a sample application that demonstrates how to build customer, partner, and marketing experiences for Salesforce Communities and Lightning Web Runtime. AZ Insurance is a fictitious insurance company. The application helps AZ Insurance to provide engaging experiences to their external partners that directly integrate with their internal systems.
+AZ Insurance is a sample application that demonstrates how to build customer, partner, and marketing experiences for Salesforce Experience Cloud and Lightning Web Runtime. AZ Insurance is a fictitious insurance company. The application helps AZ Insurance to provide engaging experiences to their external partners that directly integrate with their internal systems.
 
 ## Application progress
 
