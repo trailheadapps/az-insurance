@@ -6,6 +6,7 @@
     "label": "Build Your Own (LWR)",
     "layouts": {
         "Inner": "97256d61-f2f9-4799-b6f0-c9532bbcd1e9",
+        "ServiceNotAvailable": "adb4ab08-cfdf-4fb5-b9ef-0607eb9aace3",
         "qPPEyltdmAFdHizUuYfgzQ1rAzXqzy": "5ad28229-5499-4b8b-a6ed-8956d33cac78"
     },
     "type": "theme",
@@ -117,6 +118,25 @@
                         }
                     ],
                     "id": "c9d2e752-356f-4fec-8654-1e5fceaed5ec",
+                    "regionName": "footer",
+                    "type": "region"
+                }
+            ],
+            "type": "view"
+        },
+        {
+            "componentAttributes": {},
+            "componentName": "community_layout:simpleThemeLayout",
+            "id": "adb4ab08-cfdf-4fb5-b9ef-0607eb9aace3",
+            "label": "Service Not Available Theme Layout",
+            "regions": [
+                {
+                    "id": "dddd5652-7b62-4f96-b29f-842205d91332",
+                    "regionName": "header",
+                    "type": "region"
+                },
+                {
+                    "id": "1b4c882d-8ea2-4dd2-9057-912d1c7faba6",
                     "regionName": "footer",
                     "type": "region"
                 }
