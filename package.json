@@ -37,6 +37,6 @@
         "lint-staged": "^11.1.2",
         "prettier": "^2.4.1",
         "prettier-plugin-apex": "^1.10.0",
-        "semver": "^7.3.5"
+        "semver": "^7.3.7"
     }
 }
