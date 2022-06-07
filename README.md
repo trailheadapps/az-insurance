@@ -53,13 +53,13 @@ AZ Insurance is a sample application that demonstrates how to build customer, pa
 1.  Deploy Salesforce org metadata (does not contain Experience site metadata, a current product bug prevents a deploy of all metadata at once):
 
     ```zsh
-    sfdx force:source:deploy -m ApexClass,Layout,CustomObject,LightningComponentBundle,ManagedContentType,CustomObject,StaticResource,CustomTab,PermissionSet,Flow
+    sfdx force:source:deploy -m "ApexClass,Layout,CustomObject,LightningComponentBundle,ManagedContentType,CustomObject,StaticResource,CustomTab,PermissionSet,Flow"
     ```
 
 1.  Deploy Experience site metadata:
 
     ```zsh
-    sfdx force:source:deploy -m ApexPage,CustomSite,ExperienceBundle,NavigationMenu,Network,Profile
+    sfdx force:source:deploy -m "ApexPage,CustomSite,ExperienceBundle,NavigationMenu,Network,Profile"
     ```
 
 1.  Assign the **LWR_Marketing_Builder** permission set to the default user:
@@ -82,7 +82,7 @@ AZ Insurance is a sample application that demonstrates how to build customer, pa
 
 As the sample app uses data from Salesforce CMS we have to import the provided sample data.
 
-1.  In App Launcher, enter **CMS Home** in the search box, and select that entry.
+1.  In App Launcher, enter **Digital Experiences** in the search box, and select that entry.
 
 1.  Click **Add Workspace**.
 
