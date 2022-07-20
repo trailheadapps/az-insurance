@@ -24,9 +24,9 @@
     <referrerPolicyOriginWhenCrossOrigin
     >true</referrerPolicyOriginWhenCrossOrigin>
     <selfRegPage>CommunitiesSelfReg</selfRegPage>
-    <siteAdmin>your.user@lwr.demo</siteAdmin>
+    <siteAdmin>murugan.44@bm.com</siteAdmin>
     <siteGuestRecordDefaultOwner
-    >your.user@lwr.demo</siteGuestRecordDefaultOwner>
+    >murugan.44@bm.com</siteGuestRecordDefaultOwner>
     <siteType>ChatterNetwork</siteType>
     <subdomain>marketingsite</subdomain>
     <urlPathPrefix>marketingsite</urlPathPrefix>
