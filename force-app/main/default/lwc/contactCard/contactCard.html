@@ -6,12 +6,7 @@
         <img class="profilePic slds-align_absolute-center" src={agentPhoto} />
     </template>
     <div
-        class="
-            profileInfo
-            slds-p-top_small
-            slds-p-right_xx-large
-            slds-p-bottom_small
-        "
+        class="profileInfo slds-p-top_small slds-p-right_xx-large slds-p-bottom_small"
     >
         <template if:true={agentName}>
             <h2 class="profileName slds-text-align_left">{agentName}</h2>
@@ -28,38 +23,22 @@
     </div>
     <div class="slds-grid slds-grid_align-center slds-gutters">
         <div
-            class="
-                slds-col
-                slds-size_1-of-3
-                slds-large-size_1-of-3
-                slds-medium-size_1-of-5
-            "
+            class="slds-col slds-size_1-of-3 slds-large-size_1-of-3 slds-medium-size_1-of-5"
         >
             <a href={agentEmailTo}>
                 <button
-                    class="
-                        slds-button slds-button_neutral slds-button_stretch
-                        buttonShape
-                    "
+                    class="slds-button slds-button_neutral slds-button_stretch buttonShape"
                 >
                     Email
                 </button>
             </a>
         </div>
         <div
-            class="
-                slds-col
-                slds-size_1-of-3
-                slds-large-size_1-of-3
-                slds-medium-size_1-of-5
-            "
+            class="slds-col slds-size_1-of-3 slds-large-size_1-of-3 slds-medium-size_1-of-5"
         >
             <a href={agentPhoneCallTo}>
                 <button
-                    class="
-                        slds-button slds-button_neutral slds-button_stretch
-                        buttonShape
-                    "
+                    class="slds-button slds-button_neutral slds-button_stretch buttonShape"
                 >
                     Call
                 </button>
