@@ -1,0 +1,61 @@
+{
+    "appPageId": "cb53597b-3da7-4e08-8578-f2c0b51983f6",
+    "componentName": "community_layout:sldsFlexibleLayout",
+    "dataProviders": [],
+    "id": "3e6d2159-3126-45b6-b71b-f827873876b7",
+    "label": "Account Detail",
+    "regions": [
+        {
+            "components": [
+                {
+                    "componentAttributes": {
+                        "backgroundImageConfig": "",
+                        "backgroundImageOverlay": "rgba(0,0,0,0)",
+                        "sectionConfig": "{\"UUID\":\"1f6937f3-7aba-4687-b8e2-179d9a4d6d6e\",\"columns\":[{\"UUID\":\"847c8826-9839-48af-99e0-fcd9e1f004e7\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":[]}]}"
+                    },
+                    "componentName": "community_layout:section",
+                    "id": "1f6937f3-7aba-4687-b8e2-179d9a4d6d6e",
+                    "regions": [
+                        {
+                            "id": "847c8826-9839-48af-99e0-fcd9e1f004e7",
+                            "regionLabel": "Column 1",
+                            "regionName": "col1",
+                            "renditionMap": {},
+                            "type": "region"
+                        }
+                    ],
+                    "renderPriority": "NEUTRAL",
+                    "renditionMap": {},
+                    "scopedBrandingSetId": null,
+                    "type": "component"
+                }
+            ],
+            "id": "53dd142f-72d7-4eac-9f5e-43437eab9fb6",
+            "regionName": "content",
+            "type": "region"
+        },
+        {
+            "components": [
+                {
+                    "componentAttributes": {
+                        "customHeadTags": "",
+                        "description": "",
+                        "pageTitle": "{!Record._Object}: {!Record._Title}",
+                        "recordId": "{!recordId}"
+                    },
+                    "componentName": "community_builder:seoAssistant",
+                    "id": "f1bc2001-bc1d-4fe7-a7dc-135eb98be570",
+                    "renderPriority": "NEUTRAL",
+                    "renditionMap": {},
+                    "type": "component"
+                }
+            ],
+            "id": "9890fa40-fec3-4028-af5d-225f2e63e33f",
+            "regionName": "sfdcHiddenRegion",
+            "type": "region"
+        }
+    ],
+    "themeLayoutType": "Inner",
+    "type": "view",
+    "viewType": "detail-001"
+}

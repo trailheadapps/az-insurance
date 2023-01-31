@@ -1,0 +1,73 @@
+{
+    "appPageId": "238d008a-6b7a-4455-be50-6eb61c2770e3",
+    "componentName": "community_layout:sldsFlexibleLayout",
+    "dataProviders": [],
+    "id": "f3b9c2da-5828-4f58-992b-15b5eafa25f9",
+    "label": "Quote Confirmation",
+    "regions": [
+        {
+            "components": [
+                {
+                    "componentAttributes": {
+                        "backgroundImageConfig": "",
+                        "backgroundImageOverlay": "rgba(0,0,0,0)",
+                        "sectionConfig": "{\"UUID\":\"fbf7f13e-24f8-4ecc-a7df-a177c8e1ded1\",\"columns\":[{\"UUID\":\"baff65f1-be07-4414-811e-9f5368604536\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":[]}]}"
+                    },
+                    "componentName": "community_layout:section",
+                    "id": "fbf7f13e-24f8-4ecc-a7df-a177c8e1ded1",
+                    "regions": [
+                        {
+                            "components": [
+                                {
+                                    "componentAttributes": {
+                                        "richTextValue": "<p community_builder-richtexteditor_richtexteditor=\"\" style=\"text-align: center;\"><span community_builder-richtexteditor_richtexteditor=\"\" style=\"font-family: serif; font-size: 48px;\"><br community_builder-richtexteditor_richtexteditor=\"\" /></span><img src=\"{!cmsMedia.MC7ZJV3OR23VHKXOBIY6NKKANITE}\" width=\"343\" data-fileid=\"MC7ZJV3OR23VHKXOBIY6NKKANITE\" community_builder-richtexteditor_richtexteditor=\"\" /></p>\n<p community_builder-richtexteditor_richtexteditor=\"\"><span community_builder-richtexteditor_richtexteditor=\"\" style=\"font-family: serif; font-size: 48px;\">Quote sent. Check your email!</span></p>\n<p community_builder-richtexteditor_richtexteditor=\"\"><span community_builder-richtexteditor_richtexteditor=\"\" style=\"font-family: serif; font-size: 14px;\"><br community_builder-richtexteditor_richtexteditor=\"\" /></span></p>\n<p community_builder-richtexteditor_richtexteditor=\"\">What is a deductible? It's one of the most common car insurance questions and may be the easiest to answer: An auto insurance deductible is what you pay “out of pocket” on a claim. For instance, if you have a $500 deductible and $3,000 in damage from a covered accident, your insurer would pay $2,500 to repair your car. You're responsible for the remaining $500.</p>\n<p community_builder-richtexteditor_richtexteditor=\"\"><br community_builder-richtexteditor_richtexteditor=\"\" /></p>"
+                                    },
+                                    "componentName": "community_builder:richTextEditor",
+                                    "id": "b05fd3f0-9ea6-4bb5-bc05-0e85b201d8c6",
+                                    "renderPriority": "NEUTRAL",
+                                    "renditionMap": {},
+                                    "type": "component"
+                                }
+                            ],
+                            "id": "baff65f1-be07-4414-811e-9f5368604536",
+                            "regionLabel": "Column 1",
+                            "regionName": "col1",
+                            "renditionMap": {},
+                            "type": "region"
+                        }
+                    ],
+                    "renderPriority": "NEUTRAL",
+                    "renditionMap": {},
+                    "scopedBrandingSetId": null,
+                    "type": "component"
+                }
+            ],
+            "id": "2b82d376-463f-47e5-996a-af07042aaf92",
+            "regionName": "content",
+            "type": "region"
+        },
+        {
+            "components": [
+                {
+                    "componentAttributes": {
+                        "customHeadTags": "",
+                        "description": "",
+                        "pageTitle": "Quote Confirmation | AZ Insurance",
+                        "recordId": "{!recordId}"
+                    },
+                    "componentName": "community_builder:seoAssistant",
+                    "id": "fa1cb0f1-425e-410b-8f18-1d638afb6828",
+                    "renderPriority": "NEUTRAL",
+                    "renditionMap": {},
+                    "type": "component"
+                }
+            ],
+            "id": "fdd54709-9fcf-4e90-ad00-38818643797c",
+            "regionName": "sfdcHiddenRegion",
+            "type": "region"
+        }
+    ],
+    "themeLayoutType": "RnN5pFxJEAsNS6i3Ux8idbmEbwW7Ed",
+    "type": "view",
+    "viewType": "custom-quote-confirmation"
+}

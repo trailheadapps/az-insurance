@@ -1,0 +1,71 @@
+{
+    "appPageId": "238d008a-6b7a-4455-be50-6eb61c2770e3",
+    "componentName": "community_layout:sldsFlexibleLayout",
+    "dataProviders": [],
+    "id": "9d0ce274-4dff-475f-9ef4-3645bc67ac0b",
+    "label": "Blog Detail",
+    "regions": [
+        {
+            "components": [
+                {
+                    "componentAttributes": {
+                        "backgroundImageConfig": "",
+                        "backgroundImageOverlay": "rgba(0,0,0,0)",
+                        "sectionConfig": "{\"UUID\":\"01e4e580-a733-49a4-b3e8-e74115a3a6ce\",\"columns\":[{\"UUID\":\"dceaddfe-8707-4964-a3ed-2d0b0933a770\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":[]}]}"
+                    },
+                    "componentName": "community_layout:section",
+                    "id": "01e4e580-a733-49a4-b3e8-e74115a3a6ce",
+                    "regions": [
+                        {
+                            "components": [
+                                {
+                                    "componentAttributes": {},
+                                    "componentName": "c:cmsBlogPost",
+                                    "id": "af30c7b8-7536-43f7-ad8c-8ef00373e202",
+                                    "renderPriority": "NEUTRAL",
+                                    "renditionMap": {},
+                                    "type": "component"
+                                }
+                            ],
+                            "id": "dceaddfe-8707-4964-a3ed-2d0b0933a770",
+                            "regionLabel": "Column 1",
+                            "regionName": "col1",
+                            "renditionMap": {},
+                            "type": "region"
+                        }
+                    ],
+                    "renderPriority": "NEUTRAL",
+                    "renditionMap": {},
+                    "scopedBrandingSetId": null,
+                    "type": "component"
+                }
+            ],
+            "id": "6b55932a-ea76-4d7e-9887-0139d805c54c",
+            "regionName": "content",
+            "type": "region"
+        },
+        {
+            "components": [
+                {
+                    "componentAttributes": {
+                        "customHeadTags": "",
+                        "description": "",
+                        "pageTitle": "Blog Post | AZ Insurance",
+                        "recordId": "{!recordId}"
+                    },
+                    "componentName": "community_builder:seoAssistant",
+                    "id": "1b7ab1d6-46f3-4f92-a5d5-98382b335b19",
+                    "renderPriority": "NEUTRAL",
+                    "renditionMap": {},
+                    "type": "component"
+                }
+            ],
+            "id": "3c723172-43a6-4e27-b2e2-894401ac1024",
+            "regionName": "sfdcHiddenRegion",
+            "type": "region"
+        }
+    ],
+    "themeLayoutType": "RnN5pFxJEAsNS6i3Ux8idbmEbwW7Ed",
+    "type": "view",
+    "viewType": "custom-blog-detail"
+}

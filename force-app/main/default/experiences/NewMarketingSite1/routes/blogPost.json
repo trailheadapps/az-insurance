@@ -1,0 +1,10 @@
+{
+    "activeViewId": "9d0ce274-4dff-475f-9ef4-3645bc67ac0b",
+    "appPageId": "238d008a-6b7a-4455-be50-6eb61c2770e3",
+    "configurationTags": [],
+    "id": "f516d4c3-2b4a-4bf5-8623-e44769bb17d3",
+    "label": "Blog Post",
+    "routeType": "custom-blog-detail",
+    "type": "route",
+    "urlPrefix": "blog/post"
+}

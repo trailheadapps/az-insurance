@@ -1,0 +1,73 @@
+{
+    "appPageId": "cb53597b-3da7-4e08-8578-f2c0b51983f6",
+    "componentName": "community_layout:sldsFlexibleLayout",
+    "dataProviders": [],
+    "id": "724aa86c-04b2-4248-8058-24600ca4c425",
+    "label": "Error",
+    "regions": [
+        {
+            "components": [
+                {
+                    "componentAttributes": {
+                        "backgroundImageConfig": "",
+                        "backgroundImageOverlay": "rgba(0,0,0,0)",
+                        "sectionConfig": "{\"UUID\":\"3d0281eb-977d-4f82-8054-bab71465a41e\",\"columns\":[{\"UUID\":\"9a92d1cc-bae0-49f0-8893-2f5aa16f8cfe\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":null}]}"
+                    },
+                    "componentName": "community_layout:section",
+                    "id": "3d0281eb-977d-4f82-8054-bab71465a41e",
+                    "regions": [
+                        {
+                            "components": [
+                                {
+                                    "componentAttributes": {
+                                        "richTextValue": "<h1 style=\"text-align: center;\">Invalid Page</h1>"
+                                    },
+                                    "componentName": "community_builder:richTextEditor",
+                                    "id": "a6f2b1db-7fd8-4e72-b2fc-f4dd10b6212d",
+                                    "renderPriority": "NEUTRAL",
+                                    "renditionMap": {},
+                                    "type": "component"
+                                }
+                            ],
+                            "id": "9a92d1cc-bae0-49f0-8893-2f5aa16f8cfe",
+                            "regionLabel": "Column 1",
+                            "regionName": "col1",
+                            "renditionMap": {},
+                            "type": "region"
+                        }
+                    ],
+                    "renderPriority": "NEUTRAL",
+                    "renditionMap": {},
+                    "scopedBrandingSetId": null,
+                    "type": "component"
+                }
+            ],
+            "id": "45ac976c-4845-43d6-aa1b-3c5a935e4056",
+            "regionName": "content",
+            "type": "region"
+        },
+        {
+            "components": [
+                {
+                    "componentAttributes": {
+                        "customHeadTags": "",
+                        "description": "",
+                        "pageTitle": "Error",
+                        "recordId": "{!recordId}"
+                    },
+                    "componentName": "community_builder:seoAssistant",
+                    "id": "12a229d5-71f5-4b17-a19e-2997a5906f1b",
+                    "renderPriority": "NEUTRAL",
+                    "renditionMap": {},
+                    "type": "component"
+                }
+            ],
+            "id": "b32a6068-68c1-420e-bb97-0a2d866dc87c",
+            "regionName": "sfdcHiddenRegion",
+            "type": "region"
+        }
+    ],
+    "themeLayoutType": "Inner",
+    "type": "view",
+    "viewType": "error"
+}

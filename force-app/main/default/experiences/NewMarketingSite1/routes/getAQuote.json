@@ -1,0 +1,10 @@
+{
+    "activeViewId": "b5d46f1a-49ea-49c2-a296-5fccc1e57455",
+    "appPageId": "238d008a-6b7a-4455-be50-6eb61c2770e3",
+    "configurationTags": [],
+    "id": "2b9fdadd-0452-48e3-bae2-5b22b303e739",
+    "label": "Get A Quote",
+    "routeType": "custom-get-a-quote",
+    "type": "route",
+    "urlPrefix": "get-a-quote"
+}

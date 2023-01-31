@@ -1,0 +1,118 @@
+{
+    "appPageId": "238d008a-6b7a-4455-be50-6eb61c2770e3",
+    "componentName": "community_layout:sldsFlexibleLayout",
+    "dataProviders": [],
+    "id": "ea914ea0-76e8-476a-8cef-e54314e35fab",
+    "label": "Home",
+    "regions": [
+        {
+            "components": [
+                {
+                    "componentAttributes": {
+                        "backgroundImageConfig": "",
+                        "backgroundImageOverlay": "rgba(0,0,0,0)",
+                        "sectionConfig": "{\"UUID\":\"d8b2715e-db15-49f0-a88a-6cb9b426fb7b\",\"columns\":[{\"UUID\":\"be91d5e8-2846-44a0-9aed-0a37f95db281\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":null}]}"
+                    },
+                    "componentName": "community_layout:section",
+                    "id": "d8b2715e-db15-49f0-a88a-6cb9b426fb7b",
+                    "regions": [
+                        {
+                            "components": [
+                                {
+                                    "componentAttributes": {
+                                        "bannerContentId": "MC5DIGOAIA3NBWJIPCCZANLTNIHE",
+                                        "contentId1": "MCG3GUULQWSBDR3N65F7YXBTJACM",
+                                        "contentId2": "MCMRRZXHYXCJHGBE5M22BBDWWIXM"
+                                    },
+                                    "componentName": "c:sldsHeroCarousel",
+                                    "id": "aa22deaf-908f-4c0a-abd0-58d9267f2172",
+                                    "renderPriority": "NEUTRAL",
+                                    "renditionMap": {},
+                                    "type": "component"
+                                },
+                                {
+                                    "componentAttributes": {
+                                        "contentId": "MCM2D4HLKZWFFZJNGK5KLH25U3TU",
+                                        "displayOrder": "Swapped",
+                                        "showBackgroundColor": true
+                                    },
+                                    "componentName": "c:cmsCustomizibleSection",
+                                    "id": "a96d1e10-cc17-47a7-be4d-945ac361189d",
+                                    "renderPriority": "NEUTRAL",
+                                    "renditionMap": {},
+                                    "type": "component"
+                                },
+                                {
+                                    "componentAttributes": {
+                                        "contentId": "MCQZKO43IZANBR3K4HPKLS2Q76IM",
+                                        "displayOrder": "default"
+                                    },
+                                    "componentName": "c:cmsCustomizibleSection",
+                                    "id": "1942f735-5116-4aa8-b5c0-b18da2d05fac",
+                                    "renderPriority": "NEUTRAL",
+                                    "renditionMap": {},
+                                    "type": "component"
+                                },
+                                {
+                                    "componentAttributes": {
+                                        "buttonLabel1": "Get Insurance",
+                                        "buttonLabel2": "Get Insurance",
+                                        "buttonLabel3": "Get Insurance",
+                                        "contentId1": "MCMDIJIYTFZ5HDPLSC4PXUD3FVMU",
+                                        "contentId2": "MCB4O5EMYOJBC53DOAOKAUGJ75HY",
+                                        "contentId3": "MCVLS47HZ6IFE3VPPFP3IZEYVCHE",
+                                        "redirectPageApiName1": "get-a-quote?type=auto",
+                                        "redirectPageApiName2": "get-a-quote?type=home",
+                                        "redirectPageApiName3": "get-a-quote?type=pet",
+                                        "subTitle": "",
+                                        "title": "Flexible plans, guaranteed low prices"
+                                    },
+                                    "componentName": "c:cardsSectionWithHeader",
+                                    "id": "618a62ff-45f3-401a-9b44-300d2b0500f6",
+                                    "renderPriority": "NEUTRAL",
+                                    "renditionMap": {},
+                                    "type": "component"
+                                }
+                            ],
+                            "id": "be91d5e8-2846-44a0-9aed-0a37f95db281",
+                            "regionLabel": "Column 1",
+                            "regionName": "col1",
+                            "renditionMap": {},
+                            "type": "region"
+                        }
+                    ],
+                    "renderPriority": "NEUTRAL",
+                    "renditionMap": {},
+                    "scopedBrandingSetId": null,
+                    "type": "component"
+                }
+            ],
+            "id": "85419f31-3f23-4850-be53-cfd475c4c201",
+            "regionName": "content",
+            "type": "region"
+        },
+        {
+            "components": [
+                {
+                    "componentAttributes": {
+                        "customHeadTags": "",
+                        "description": "",
+                        "pageTitle": "Home | AZ Insurance",
+                        "recordId": "{!recordId}"
+                    },
+                    "componentName": "community_builder:seoAssistant",
+                    "id": "af1286e5-fb42-404a-9933-eee27b5df1b9",
+                    "renderPriority": "NEUTRAL",
+                    "renditionMap": {},
+                    "type": "component"
+                }
+            ],
+            "id": "5b73ba0e-7538-462a-b7f3-7f4a5b85c84c",
+            "regionName": "sfdcHiddenRegion",
+            "type": "region"
+        }
+    ],
+    "themeLayoutType": "RnN5pFxJEAsNS6i3Ux8idbmEbwW7Ed",
+    "type": "view",
+    "viewType": "home"
+}

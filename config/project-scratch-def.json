@@ -2,7 +2,7 @@
     "orgName": "az-insurance",
     "edition": "Developer",
     "hasSampleData": false,
-    "features": ["Communities", "Walkthroughs", "EnableSetPasswordInApi"],
+    "features": ["Communities", "EnableSetPasswordInApi"],
     "settings": {
         "communitiesSettings": {
             "enableNetworksEnabled": true

@@ -1,0 +1,53 @@
+{
+    "appPageId": "cb53597b-3da7-4e08-8578-f2c0b51983f6",
+    "componentName": "community_layout:sldsFlexibleLayout",
+    "dataProviders": [],
+    "id": "c2d61bf7-cb29-466a-ae90-ee92b2056372",
+    "label": "Service Not Available",
+    "regions": [
+        {
+            "components": [
+                {
+                    "componentAttributes": {
+                        "backgroundImageConfig": "",
+                        "backgroundImageOverlay": "rgba(0,0,0,0)",
+                        "sectionConfig": "{\"UUID\":\"53c9af75-5e7f-4042-a039-431a57874e51\",\"columns\":[{\"UUID\":\"6c6005a0-ef3e-49fa-88d7-978379625006\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":null}]}"
+                    },
+                    "componentName": "community_layout:section",
+                    "id": "53c9af75-5e7f-4042-a039-431a57874e51",
+                    "regions": [
+                        {
+                            "components": [
+                                {
+                                    "componentAttributes": {
+                                        "richTextValue": "<div style=\"display: flex; align-items: center; flex-direction: column; margin: 60px 25px 40px 25px;\">\n\t<div style=\"background: url(assets/img/serviceNotAvailable.svg) center no-repeat; background-size: contain; height: 331px; width: 100%; max-width: 538px;\"></div>\n</div>\n<div style=\"margin: 0 25px; text-align: center;\">\n\t<h1><b style=\"font-size: 2em\">Looks like the site is temporarily unavailable</b></h1>\n\t<br/>\n\t<p><span style=\"font-size: 1.5em;\">Please try again in a bit.</span></p>\n</div>"
+                                    },
+                                    "componentName": "community_builder:htmlEditor",
+                                    "id": "7f2f7a31-95cc-4433-9141-d9c5eea41b1d",
+                                    "renderPriority": "NEUTRAL",
+                                    "renditionMap": {},
+                                    "type": "component"
+                                }
+                            ],
+                            "id": "6c6005a0-ef3e-49fa-88d7-978379625006",
+                            "regionLabel": "Column 1",
+                            "regionName": "col1",
+                            "renditionMap": {},
+                            "type": "region"
+                        }
+                    ],
+                    "renderPriority": "NEUTRAL",
+                    "renditionMap": {},
+                    "scopedBrandingSetId": null,
+                    "type": "component"
+                }
+            ],
+            "id": "190c4832-67a3-4385-8a19-8e569c512584",
+            "regionName": "content",
+            "type": "region"
+        }
+    ],
+    "themeLayoutType": "ServiceNotAvailable",
+    "type": "view",
+    "viewType": "service-not-available"
+}

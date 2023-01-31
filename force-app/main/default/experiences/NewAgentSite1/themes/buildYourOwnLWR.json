@@ -1,0 +1,122 @@
+{
+    "activeBrandingSetId": "20e8618b-ab2e-42af-9b63-09eab421a828",
+    "customCSS": "",
+    "developerName": "byo",
+    "id": "c78b5504-af4a-4909-be50-e165c0e2b164",
+    "label": "Build Your Own (LWR)",
+    "layouts": {
+        "Inner": "9dd55896-0941-423f-8bec-2e16fdca64dc",
+        "ServiceNotAvailable": "29c6d63d-5631-4a46-a53c-93ea4a57d80d"
+    },
+    "type": "theme",
+    "views": [
+        {
+            "componentAttributes": {},
+            "componentName": "community_byo:scopedHeaderAndFooter",
+            "id": "9dd55896-0941-423f-8bec-2e16fdca64dc",
+            "label": "Scoped Header and Footer",
+            "regions": [
+                {
+                    "components": [
+                        {
+                            "componentAttributes": {
+                                "backgroundImageConfig": "",
+                                "backgroundImageOverlay": "rgba(0,0,0,0)",
+                                "sectionConfig": "{\"UUID\":\"c8fcdba0-ffc8-43ab-a76c-f04816e95167\",\"columns\":[{\"UUID\":\"a43bced4-c366-4004-8488-c448d677c1d5\",\"columnName\":\"Column 1\",\"columnKey\":\"headerSection\",\"columnWidth\":\"12\",\"seedComponents\":null}]}"
+                            },
+                            "componentName": "community_layout:section",
+                            "id": "c8fcdba0-ffc8-43ab-a76c-f04816e95167",
+                            "regions": [
+                                {
+                                    "components": [
+                                        {
+                                            "componentAttributes": {
+                                                "menuName": "Default Navigation"
+                                            },
+                                            "componentName": "c:authNavigationMenu",
+                                            "id": "c5a7e96f-c31d-4093-8581-1c9511e2ba0b",
+                                            "renditionMap": {},
+                                            "type": "component"
+                                        }
+                                    ],
+                                    "id": "a43bced4-c366-4004-8488-c448d677c1d5",
+                                    "regionLabel": "Theme Header",
+                                    "regionName": "headerSection",
+                                    "renditionMap": {},
+                                    "type": "region"
+                                }
+                            ],
+                            "renditionMap": {},
+                            "scopedBrandingSetId": null,
+                            "type": "component"
+                        }
+                    ],
+                    "id": "2315a40a-97e5-446d-b027-d0e2012a4de8",
+                    "regionName": "header",
+                    "type": "region"
+                },
+                {
+                    "components": [
+                        {
+                            "componentAttributes": {
+                                "backgroundImageConfig": "",
+                                "backgroundImageOverlay": "rgba(0,0,0,0)",
+                                "sectionConfig": "{\"UUID\":\"747d81fc-17ec-43cc-878d-67d40a5b48f3\",\"columns\":[{\"UUID\":\"e3232d6e-a394-4c91-b060-d3d87125ab51\",\"columnName\":\"Column 1\",\"columnKey\":\"footerSection\",\"columnWidth\":\"12\",\"seedComponents\":null}]}"
+                            },
+                            "componentName": "community_layout:section",
+                            "id": "747d81fc-17ec-43cc-878d-67d40a5b48f3",
+                            "regions": [
+                                {
+                                    "components": [
+                                        {
+                                            "componentAttributes": {
+                                                "footerMenuName1": "Default Navigation",
+                                                "footerMenuName2": "Default Navigation",
+                                                "footerMenuName3": "Default Navigation"
+                                            },
+                                            "componentName": "c:footer",
+                                            "id": "5c90e159-7f38-4948-8cfc-dfdeb5cdc48a",
+                                            "renditionMap": {},
+                                            "type": "component"
+                                        }
+                                    ],
+                                    "id": "e3232d6e-a394-4c91-b060-d3d87125ab51",
+                                    "regionLabel": "Theme Footer",
+                                    "regionName": "footerSection",
+                                    "renditionMap": {},
+                                    "type": "region"
+                                }
+                            ],
+                            "renditionMap": {},
+                            "scopedBrandingSetId": null,
+                            "type": "component"
+                        }
+                    ],
+                    "id": "aa3adf7a-b2f6-4ea4-8dbe-da7a06323386",
+                    "regionName": "footer",
+                    "type": "region"
+                }
+            ],
+            "type": "view"
+        },
+        {
+            "componentAttributes": {},
+            "componentName": "community_layout:simpleThemeLayout",
+            "id": "29c6d63d-5631-4a46-a53c-93ea4a57d80d",
+            "label": "Service Not Available Theme Layout",
+            "regions": [
+                {
+                    "id": "0891740c-623c-404f-8557-339c6bdd269e",
+                    "regionName": "header",
+                    "type": "region"
+                },
+                {
+                    "id": "f7dd2ef9-669a-4a0e-9a21-3cfa2c80d67f",
+                    "regionName": "footer",
+                    "type": "region"
+                }
+            ],
+            "type": "view"
+        }
+    ]
+}

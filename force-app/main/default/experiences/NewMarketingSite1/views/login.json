@@ -1,0 +1,101 @@
+{
+    "appPageId": "238d008a-6b7a-4455-be50-6eb61c2770e3",
+    "componentName": "community_layout:sldsFlexibleLayout",
+    "dataProviders": [],
+    "id": "c7254a1e-8e0c-4cf5-a96d-6860637d22f8",
+    "label": "Login",
+    "regions": [
+        {
+            "components": [
+                {
+                    "componentAttributes": {
+                        "backgroundImageConfig": "",
+                        "backgroundImageOverlay": "rgba(0,0,0,0)",
+                        "sectionConfig": "{\"UUID\":\"a06b298c-2b94-40a1-bd17-1c67db82cfeb\",\"columns\":[{\"UUID\":\"992e5578-e6a7-4896-9c79-bfbb2a3a2a61\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":null}]}"
+                    },
+                    "componentName": "community_layout:section",
+                    "id": "a06b298c-2b94-40a1-bd17-1c67db82cfeb",
+                    "regions": [
+                        {
+                            "components": [
+                                {
+                                    "componentAttributes": {
+                                        "imageInfo": "",
+                                        "logoWidth": 250
+                                    },
+                                    "componentName": "dxp_content_layout:siteLogo",
+                                    "id": "c2385fb5-64f9-4ff7-8af7-f7d9ac134f83",
+                                    "renderPriority": "NEUTRAL",
+                                    "renditionMap": {},
+                                    "type": "component"
+                                },
+                                {
+                                    "componentAttributes": {
+                                        "forgotPasswordLabel": "Forgot your password?",
+                                        "forgotPasswordUrl": "/ForgotPassword",
+                                        "loginButtonLabel": "Log In",
+                                        "passwordLabel": "Password",
+                                        "selfRegisterLabel": "Not a member?",
+                                        "selfRegisterUrl": "/SelfRegister",
+                                        "startUrl": "",
+                                        "usernameLabel": "Username"
+                                    },
+                                    "componentName": "community_login:loginForm",
+                                    "id": "fb45d374-9d38-4fd7-8219-655bd048b8cd",
+                                    "renderPriority": "NEUTRAL",
+                                    "renditionMap": {},
+                                    "type": "component"
+                                },
+                                {
+                                    "componentAttributes": {
+                                        "employeeLoginLinkLabel": "Are you an employee? Log in"
+                                    },
+                                    "componentName": "community_login:employeeLoginLink",
+                                    "id": "0da48aa1-bbe4-4ce1-990e-7ad4eb43c7ae",
+                                    "renderPriority": "NEUTRAL",
+                                    "renditionMap": {},
+                                    "type": "component"
+                                }
+                            ],
+                            "id": "992e5578-e6a7-4896-9c79-bfbb2a3a2a61",
+                            "regionLabel": "Column 1",
+                            "regionName": "col1",
+                            "renditionMap": {},
+                            "type": "region"
+                        }
+                    ],
+                    "renderPriority": "NEUTRAL",
+                    "renditionMap": {},
+                    "scopedBrandingSetId": null,
+                    "type": "component"
+                }
+            ],
+            "id": "c24d3425-75c1-4c9f-ab2f-22a88a83e6a0",
+            "regionName": "content",
+            "type": "region"
+        },
+        {
+            "components": [
+                {
+                    "componentAttributes": {
+                        "customHeadTags": "",
+                        "description": "",
+                        "pageTitle": "Login",
+                        "recordId": "{!recordId}"
+                    },
+                    "componentName": "community_builder:seoAssistant",
+                    "id": "90cda4de-5c48-4f4b-9335-46ba2c004252",
+                    "renderPriority": "NEUTRAL",
+                    "renditionMap": {},
+                    "type": "component"
+                }
+            ],
+            "id": "c4b64b2f-e225-4800-ab35-8755962109f3",
+            "regionName": "sfdcHiddenRegion",
+            "type": "region"
+        }
+    ],
+    "themeLayoutType": "Inner",
+    "type": "view",
+    "viewType": "login-main"
+}

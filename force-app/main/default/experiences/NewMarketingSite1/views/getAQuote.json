@@ -1,0 +1,104 @@
+{
+    "appPageId": "238d008a-6b7a-4455-be50-6eb61c2770e3",
+    "componentName": "community_layout:sldsFlexibleLayout",
+    "dataProviders": [],
+    "id": "b5d46f1a-49ea-49c2-a296-5fccc1e57455",
+    "label": "Get A Quote",
+    "regions": [
+        {
+            "components": [
+                {
+                    "componentAttributes": {
+                        "backgroundImageConfig": "",
+                        "backgroundImageOverlay": "rgba(0,0,0,0)",
+                        "sectionConfig": "{\"UUID\":\"e4c7cf62-a5fb-4ffd-9f12-1372a358aa96\",\"columns\":[{\"UUID\":\"f7fadbfe-3516-4371-9f09-89df4fc5f198\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"6\",\"seedComponents\":[]},{\"UUID\":\"efba1733-c678-4c9e-8370-8211d2400eaa\",\"columnName\":\"Column 2\",\"columnKey\":\"4a68a\",\"columnWidth\":\"6\",\"seedComponents\":[]}]}"
+                    },
+                    "componentName": "community_layout:section",
+                    "id": "e4c7cf62-a5fb-4ffd-9f12-1372a358aa96",
+                    "regions": [
+                        {
+                            "components": [
+                                {
+                                    "componentAttributes": {
+                                        "contentId": "MCDIQOVBLFZBFC5DTVXSNOMUB4BQ",
+                                        "hideOnMobile": true
+                                    },
+                                    "componentName": "c:cmsSingleDisplay",
+                                    "id": "b5a30b1c-dc5d-461a-b5bf-44566e58ff7a",
+                                    "renderPriority": "NEUTRAL",
+                                    "renditionMap": {},
+                                    "type": "component"
+                                }
+                            ],
+                            "id": "f7fadbfe-3516-4371-9f09-89df4fc5f198",
+                            "regionLabel": "Column 1",
+                            "regionName": "col1",
+                            "renditionMap": {},
+                            "type": "region"
+                        },
+                        {
+                            "components": [
+                                {
+                                    "componentAttributes": {
+                                        "action1": "pet",
+                                        "action2": "homeowner",
+                                        "action3": "auto",
+                                        "buttonLabel": "Get Quote",
+                                        "contentId1": "MCEZ5BJL3FABFGRL43HPCEGCQMRM",
+                                        "contentId2": "MCKR7M5BUOMRGXFKH2WLJ5PI76NM",
+                                        "contentId3": "MCKJ2OVH4WCRD65BLL75Y6ED4PNA",
+                                        "redirectPageApiName": "Quote_Confirmation__c",
+                                        "title": "What do you need to insure today?",
+                                        "title1": "Pet",
+                                        "title2": "Home",
+                                        "title3": "Auto"
+                                    },
+                                    "componentName": "c:lightningRecordForm",
+                                    "id": "938cd2c7-ea2e-4ca5-9848-b86ce3ab7712",
+                                    "renderPriority": "NEUTRAL",
+                                    "renditionMap": {},
+                                    "type": "component"
+                                }
+                            ],
+                            "id": "efba1733-c678-4c9e-8370-8211d2400eaa",
+                            "regionLabel": "Column 2",
+                            "regionName": "4a68a",
+                            "renditionMap": {},
+                            "type": "region"
+                        }
+                    ],
+                    "renderPriority": "NEUTRAL",
+                    "renditionMap": {},
+                    "scopedBrandingSetId": null,
+                    "type": "component"
+                }
+            ],
+            "id": "cbf2bcc6-f8dd-4ffb-bbcc-365edb1fddaf",
+            "regionName": "content",
+            "type": "region"
+        },
+        {
+            "components": [
+                {
+                    "componentAttributes": {
+                        "customHeadTags": "",
+                        "description": "",
+                        "pageTitle": "Get a Quote | AZ Insurance",
+                        "recordId": "{!recordId}"
+                    },
+                    "componentName": "community_builder:seoAssistant",
+                    "id": "19c4dfcb-cf3a-466e-be2f-087d6e890176",
+                    "renderPriority": "NEUTRAL",
+                    "renditionMap": {},
+                    "type": "component"
+                }
+            ],
+            "id": "470350a4-607f-4a47-90b3-cbce5dc829a5",
+            "regionName": "sfdcHiddenRegion",
+            "type": "region"
+        }
+    ],
+    "themeLayoutType": "RnN5pFxJEAsNS6i3Ux8idbmEbwW7Ed",
+    "type": "view",
+    "viewType": "custom-get-a-quote"
+}

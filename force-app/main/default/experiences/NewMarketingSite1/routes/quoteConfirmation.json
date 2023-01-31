@@ -1,0 +1,10 @@
+{
+    "activeViewId": "f3b9c2da-5828-4f58-992b-15b5eafa25f9",
+    "appPageId": "238d008a-6b7a-4455-be50-6eb61c2770e3",
+    "configurationTags": [],
+    "id": "a604b172-26fe-4ae8-aaf3-46614fce4fab",
+    "label": "Quote Confirmation",
+    "routeType": "custom-quote-confirmation",
+    "type": "route",
+    "urlPrefix": "quote-confirmation"
+}

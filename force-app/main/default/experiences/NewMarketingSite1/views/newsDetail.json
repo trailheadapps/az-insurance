@@ -1,0 +1,61 @@
+{
+    "appPageId": "238d008a-6b7a-4455-be50-6eb61c2770e3",
+    "componentName": "community_layout:sldsFlexibleLayout",
+    "dataProviders": [],
+    "id": "b8350a98-c018-4342-8a91-2e8cbb5bab86",
+    "label": "News Detail",
+    "regions": [
+        {
+            "components": [
+                {
+                    "componentAttributes": {
+                        "backgroundImageConfig": "",
+                        "backgroundImageOverlay": "rgba(0,0,0,0)",
+                        "sectionConfig": "{\"UUID\":\"4f235074-be3d-41b6-b78c-dcfc13286e32\",\"columns\":[{\"UUID\":\"cb93cb8e-c50b-428d-9723-880ff408bd52\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":[]}]}"
+                    },
+                    "componentName": "community_layout:section",
+                    "id": "4f235074-be3d-41b6-b78c-dcfc13286e32",
+                    "regions": [
+                        {
+                            "id": "cb93cb8e-c50b-428d-9723-880ff408bd52",
+                            "regionLabel": "Column 1",
+                            "regionName": "col1",
+                            "renditionMap": {},
+                            "type": "region"
+                        }
+                    ],
+                    "renderPriority": "NEUTRAL",
+                    "renditionMap": {},
+                    "scopedBrandingSetId": null,
+                    "type": "component"
+                }
+            ],
+            "id": "6a5f81aa-97d9-4ce1-a9e7-5118feabba8e",
+            "regionName": "content",
+            "type": "region"
+        },
+        {
+            "components": [
+                {
+                    "componentAttributes": {
+                        "customHeadTags": "",
+                        "description": "",
+                        "pageTitle": "{!Content.contentTypeLabel}.{!Content.title}",
+                        "recordId": "{!recordId}"
+                    },
+                    "componentName": "community_builder:seoAssistant",
+                    "id": "8f3e3cc1-8393-4879-b6b4-c754f1eed794",
+                    "renderPriority": "NEUTRAL",
+                    "renditionMap": {},
+                    "type": "component"
+                }
+            ],
+            "id": "9907b13c-3d62-419a-a0ee-7b3023539f35",
+            "regionName": "sfdcHiddenRegion",
+            "type": "region"
+        }
+    ],
+    "themeLayoutType": "Inner",
+    "type": "view",
+    "viewType": "managed-content-news"
+}
