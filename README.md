@@ -98,7 +98,7 @@ As the sample app uses data from Salesforce CMS we have to import the provided s
 
 1.  Import text content by selecting the dropdown besides the **Language** button, then select **Import**.
 
-1.  Import text the file [`1-content-0gU1F000000000a.zip`](./data/2-media-content-0gU1F000000000a.zip) from this projects `data` folder. Ensure to select **Publish content after import**.
+1.  Import text the file [`1-content-0gU1F000000000a.zip`](./data/1-content-0gU1F000000000a.zip) from this projects `data` folder. Ensure to select **Publish content after import**.
 
 1.  Open the previously provided URL to access your Experience Cloud LWR site.
 
