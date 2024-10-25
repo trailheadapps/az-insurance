@@ -53,7 +53,7 @@ AZ Insurance is a sample application that demonstrates how to build customer, pa
 1.  Deploy Salesforce org metadata (does not contain Experience site metadata, a current product bug prevents a deploy of all metadata at once):
 
     ```zsh
-   sf project deploy start --metadata ApexClass --metadata Layout --metadata CustomObject --metadata LightningComponentBundle --metadata ManagedContentType --metadata CustomObject --metadata StaticResource --metadata CustomTab --metadata PermissionSet --metadata Flow
+    sf project deploy start --metadata ApexClass --metadata Layout --metadata CustomObject --metadata LightningComponentBundle --metadata ManagedContentType --metadata CustomObject --metadata StaticResource --metadata CustomTab --metadata PermissionSet --metadata Flow
     ```
 
 1.  Deploy Experience site metadata:
