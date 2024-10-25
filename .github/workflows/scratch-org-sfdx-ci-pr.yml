@@ -50,10 +50,10 @@ jobs:
             # Install Salesforce CLI
             - name: Install Salesforce CLI
               run: |
-                  wget https://developer.salesforce.com/media/salesforce-cli/sf/channels/stable/sf-linux-x64.tar.xz
-                  mkdir sf-cli
-                  tar xJf sf-linux-x64.tar.xz -C sf-cli --strip-components 1
-                  ./sf-cli/install
+                  npm install @salesforce/cli --location=global
+                  nodeInstallPath=$(npm config get prefix)
+                  echo "$nodeInstallPath/bin" >> $GITHUB_PATH
+                  sf --version
 
             # Checkout the code in the pull request
             - name: 'Checkout source code'
