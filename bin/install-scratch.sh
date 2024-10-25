@@ -11,15 +11,15 @@ echo ""
 
 # Install script
 echo "Cleaning previous scratch org..."
-sfdx force:org:delete -p -u $ORG_ALIAS &> /dev/null
+sf org delete scratch -p -o  $ORG_ALIAS &> /dev/null
 echo ""
 
 echo "Creating scratch org..." && \
-sfdx force:org:create -s -f config/project-scratch-def.json -d 30 -a $ORG_ALIAS && \
+sf org create scratch -s -f config/project-scratch-def.json -d 30 -a $ORG_ALIAS && \
 echo "" && \
 
 echo "Creating dummy Experience site..."
-sfdx force:community:create --name "Dummy" --templatename "Aloha" -p "dummy"
+sf community create --name "Dummy" --templatename "Aloha" -p "dummy"
 echo ""
 
 echo "Sleeping 30s for Experience site deployment"
@@ -27,27 +27,27 @@ sleep 30
 echo ""
 
 echo "Deploying standard metadata..."
-sfdx force:source:deploy -m ApexClass,Layout,CustomObject,LightningComponentBundle,ManagedContentType,CustomObject,StaticResource,CustomTab,PermissionSet,Flow
+sf project deploy start --metadata ApexClass --metadata Layout --metadata CustomObject --metadata LightningComponentBundle --metadata ManagedContentType --metadata StaticResource --metadata CustomTab --metadata PermissionSet --metadata Flow -m ApexClass,Layout,CustomObject,LightningComponentBundle,ManagedContentType,CustomObject,StaticResource,CustomTab,PermissionSet,Flow
 echo ""
 
 echo "Deploying Experience site metadata..."
-sfdx force:source:deploy -m ApexPage,CustomSite,ExperienceBundle,NavigationMenu,Network,Profile
+sf project deploy start --metadata ApexPage --metadata CustomSite --metadata ExperienceBundle --metadata NavigationMenu --metadata Network --metadata Profile
 echo ""
 
 echo "Assigning permission set for Marketing Site Builder"
-sfdx force:user:permset:assign -n LWR_Marketing_Builder
+sf org assign permset -n LWR_Marketing_Builder
 echo ""
 
 echo "Publishing Marketing Site..."
-sfdx force:community:publish -n "LWR Demo Marketing" 
+sf community publish -n "LWR Demo Marketing" 
 echo ""
 
 echo "Publishing Agent Portal..."
-sfdx force:community:publish -n "LWR Demo Marketing" 
+sf community publish -n "LWR Demo Marketing" 
 echo ""
 
 echo "Opening org..." && \
-sfdx force:org:open
+sf org open
 echo ""
 
 EXIT_CODE="$?"

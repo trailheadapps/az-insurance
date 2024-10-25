@@ -9,41 +9,41 @@ echo Installing AZ Insurance scratch org (%ORG_ALIAS%)
 
 rem Install script
 echo Cleaning previous scratch org...
-cmd.exe /c sfdx force:org:delete -p -u %ORG_ALIAS% 2>NUL
+cmd.exe /c sf org delete scratch -p -o  %ORG_ALIAS% 2>NUL
 @echo:
 
 echo Creating scratch org...
-cmd.exe /c sfdx force:org:create -s -f config/project-scratch-def.json -d 30 -a %ORG_ALIAS%
+cmd.exe /c sf org create scratch -s -f config/project-scratch-def.json -d 30 -a %ORG_ALIAS%
 call :checkForError
 @echo:
 
 echo Creating dummy Experience site...
-cmd.exe /c sfdx force:community:create --name "Dummy" --templatename "Aloha" -p "dummy"
+cmd.exe /c sf community create --name "Dummy" --templatename "Aloha" -p "dummy"
 call :checkForError
 @echo:
 
 echo Deploying standard metadata...
-cmd.exe /c sfdx force:source:deploy -m ApexClass,Layout,CustomObject,LightningComponentBundle,ManagedContentType,CustomObject,StaticResource,CustomTab,PermissionSet,Flow
+cmd.exe /csf project deploy start --metadata ApexClass --metadata Layout --metadata CustomObject --metadata LightningComponentBundle --metadata ManagedContentType --metadata CustomObject --metadata StaticResource --metadata CustomTab --metadata PermissionSet --metadata Flow
 call :checkForError
 @echo:
 cd %CD%/..
 
 echo Deploying Experience site metadata...
-cmd.exe /c sfdx force:source:deploy -m ApexPage,CustomSite,ExperienceBundle,NavigationMenu,Network,Profile
+cmd.exe /c sf project deploy start --metadata ApexPage --metadata CustomSite --metadata ExperienceBundle --metadata NavigationMenu --metadata Network --metadata Profile
 call :checkForError
 @echo:
 
 echo Assigning permission set for Marketing Site Builder
-cmd.exe /c sfdx force:user:permset:assign -n LWR_Marketing_Builder
+cmd.exe /c sf org assign permset -n LWR_Marketing_Builder
 @echo:
 
 echo Publishing Marketing Site...
-cmd.exe /c sfdx force:community:publish -n "LWR Demo Marketing" 
+cmd.exe /c sf community publish -n "LWR Demo Marketing" 
 call :checkForError
 @echo:
 
 echo Publishing Agent Portal...
-cmd.exe /c sfdx force:community:publish -n "LWR Demo Agent" 
+cmd.exe /c sf community publish -n "LWR Demo Agent" 
 call :checkForError
 @echo:
 

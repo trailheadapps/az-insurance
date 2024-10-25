@@ -28,7 +28,7 @@ AZ Insurance is a sample application that demonstrates how to build customer, pa
 1.  If you haven't already done so, authorize your hub org and provide it with an alias (**myhuborg** in the command below):
 
     ```zsh
-    sfdx auth:web:login -d -a myhuborg
+    sf org login sfdx-url -d -a myhuborg
     ```
 
 1.  Clone the repository:
@@ -41,43 +41,43 @@ AZ Insurance is a sample application that demonstrates how to build customer, pa
 1.  Create a scratch org and provide it with an alias (**az-insurance** in the command below):
 
     ```zsh
-    sfdx force:org:create -s -f config/project-scratch-def.json -a az-insurance
+    sf org create scratch -s -f config/project-scratch-def.json -a az-insurance
     ```
 
 1.  Create a dummy Experience site. This is currently a necessary intermediate step to provision Experience Cloud related metadata before deploying our site.
 
     ```zsh
-    sfdx force:community:create --name "Dummy" --templatename "Aloha" -p "dummy"
+    sf community create --name "Dummy" --templatename "Aloha" -p "dummy"
     ```
 
 1.  Deploy Salesforce org metadata (does not contain Experience site metadata, a current product bug prevents a deploy of all metadata at once):
 
     ```zsh
-    sfdx force:source:deploy -m "ApexClass,Layout,CustomObject,LightningComponentBundle,ManagedContentType,CustomObject,StaticResource,CustomTab,PermissionSet,Flow"
+   sf project deploy start --metadata ApexClass --metadata Layout --metadata CustomObject --metadata LightningComponentBundle --metadata ManagedContentType --metadata CustomObject --metadata StaticResource --metadata CustomTab --metadata PermissionSet --metadata Flow
     ```
 
 1.  Deploy Experience site metadata:
 
     ```zsh
-    sfdx force:source:deploy -m "ApexPage,CustomSite,ExperienceBundle,NavigationMenu,Network,Profile"
+    sf project deploy start --metadata ApexClass --metadata Layout --metadata CustomObject --metadata LightningComponentBundle --metadata ManagedContentType --metadata StaticResource --metadata CustomTab --metadata PermissionSet --metadata Flow
     ```
 
 1.  Assign the **LWR_Marketing_Builder** permission set to the default user:
 
     ```zsh
-    sfdx force:user:permset:assign -n LWR_Marketing_Builder
+    sf org assign permset -n "LWR_Marketing_Builder"
     ```
 
 1.  Publish the Marketing site. The site URL will be printed via the CLI, and you'll receive a notification via email:
 
     ```zsh
-    sfdx force:community:publish -n "LWR Demo Marketing"
+    sf community publish -n "LWR Demo Marketing"
     ```
 
 1.  Open the scratch org:
 
     ```
-    sfdx force:org:open
+    sf org open
     ```
 
 As the sample app uses data from Salesforce CMS we have to import the provided sample data.
