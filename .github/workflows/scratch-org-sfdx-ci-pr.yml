@@ -78,7 +78,7 @@ jobs:
 
             # Deploy standard metadata
             - name: 'Deploy standard metadata'
-              run:sf project deploy start --metadata ApexClass --metadata Layout --metadata CustomObject --metadata LightningComponentBundle --metadata ManagedContentType --metadata CustomObject --metadata StaticResource --metadata CustomTab --metadata PermissionSet --metadata Flow
+              run: sf project deploy start --metadata ApexClass --metadata Layout --metadata CustomObject --metadata LightningComponentBundle --metadata ManagedContentType --metadata CustomObject --metadata StaticResource --metadata CustomTab --metadata PermissionSet --metadata Flow
 
             # Deploy Experience site metadata
             - name: 'Deploy Experience site metadata'
