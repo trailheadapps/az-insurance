@@ -1,8 +1,11 @@
 {
-    "authenticationType": "UNAUTHENTICATED",
+    "authenticationType": "AUTHENTICATED_WITH_PUBLIC_ACCESS_ENABLED",
     "isFilteredComponentsView": false,
     "isProgressiveRenderingEnabled": false,
     "mainAppPageId": "24c5e29f-4104-4963-99c7-e83810aa4532",
     "preferredDomain": "none",
-    "type": "site"
+    "type": "site",
+    "selfRegistrationRouteId": "b8fe8ab1-f266-41e1-a63b-4791165f3c2d",
+    "forgotPasswordRouteId": "92bbb3da-a6be-4b2a-8fc4-cb08f6ff63ff",
+    "loginAppPageId": "1da75314-3e45-4afd-b6dd-23be8e2f9c00"
 }
