@@ -63,29 +63,25 @@ jobs:
 
             # Authenticate dev hub
             - name: 'Authenticate Dev Hub'
-              run: 'sf org login sfdx-url -f ./DEVHUB_SFDX_URL.txt -a devhub -d'
+              run: sf org login sfdx-url -f ./DEVHUB_SFDX_URL.txt -a devhub -d
 
             # Create scratch org
             - name: 'Create scratch org'
-              run: 'sf org create scratch -f config/project-scratch-def.json -a scratch-org -s -d 1'
+              run: sf org create scratch -f config/project-scratch-def.json -a $ORG_ALIAS -d -y 30
 
             # Create dummy Experience site to provision Experience Cloud metadata
             - name: 'Create dummy Experience site'
-              run: sf community create --name "Dummy" --templatename "Aloha" -p dummy
-
-            # Deploy standard metadata
-            - name: 'Deploy standard metadata'
-              run: sf project deploy start --metadata ApexClass --metadata Layout --metadata CustomObject --metadata LightningComponentBundle --metadata ManagedContentType --metadata CustomObject --metadata StaticResource --metadata CustomTab --metadata PermissionSet --metadata Flow
+              run: sf community create --name "Dummy" --template-name "Aloha" -p dummy
 
             # Deploy Experience site metadata
             - name: 'Deploy Experience site metadata'
-              run: sf project deploy start --metadata ApexPage --metadata CustomSite --metadata ExperienceBundle --metadata NavigationMenu --metadata Network --metadata Profile
+              run: sf project deploy start
 
             # Assign permissionset to default user
             - name: 'Assign permissionset to default user'
-              run: 'sf org assign permset -n LWR_Marketing_Builder'
+              run: sf org assign permset -n LWR_Marketing_Builder
 
             # Housekeeping
             - name: 'Delete scratch org'
               if: always()
-              run: 'sf org delete scratch -p -o  scratch-org'
+              run: sf org delete scratch -p -o scratch-org

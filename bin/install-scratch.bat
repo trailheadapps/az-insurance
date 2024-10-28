@@ -13,12 +13,12 @@ cmd.exe /c sf org delete scratch -p -o  %ORG_ALIAS% 2>NUL
 @echo:
 
 echo Creating scratch org...
-cmd.exe /c sf org create scratch -s -f config/project-scratch-def.json -d 30 -a %ORG_ALIAS%
+cmd.exe /c sf org create scratch -f config/project-scratch-def.json -d 30 -a %ORG_ALIAS%
 call :checkForError
 @echo:
 
 echo Creating dummy Experience site...
-cmd.exe /c sf community create --name "Dummy" --templatename "Aloha" -p "dummy"
+cmd.exe /c sf community create --name "Dummy" --template-name "Aloha" -p "dummy"
 call :checkForError
 @echo:
 
@@ -29,7 +29,7 @@ call :checkForError
 cd %CD%/..
 
 echo Deploying Experience site metadata...
-cmd.exe /c sf project deploy start --metadata ApexPage --metadata CustomSite --metadata ExperienceBundle --metadata NavigationMenu --metadata Network --metadata Profile
+cmd.exe /c sf project deploy start --metadata ApexPage --metadata CustomSite --metadata ExperienceBundle --metadata NavigationMenu --metadata Network --metadata Profile --ignore-conflicts
 call :checkForError
 @echo:
 

@@ -70,11 +70,11 @@ jobs:
 
             # Create scratch org
             - name: 'Create scratch org'
-              run: 'sf org create scratch -f config/project-scratch-def.json -a scratch-org -s -d 1'
+              run: sf org create scratch -f config/project-scratch-def.json -a $ORG_ALIAS -d -y 30
 
             # Create dummy Experience site to provision Experience Cloud metadata
             - name: 'Create dummy Experience site'
-              run: sf community create --name "Dummy" --templatename "Aloha" -p dummy
+              run: sf community create --name "Dummy" --template-name "Aloha" -p dummy
 
             # Deploy standard metadata
             - name: 'Deploy standard metadata'
@@ -86,9 +86,9 @@ jobs:
 
             # Assign permissionset to default user
             - name: 'Assign permissionset to default user'
-              run: 'sf org assign permset -n LWR_Marketing_Builder'
+              run: sf org assign permset -n LWR_Marketing_Builder
 
             # Housekeeping
             - name: 'Delete scratch org'
               if: always()
-              run: 'sf org delete scratch -p -o  scratch-org'
+              run: sf org delete scratch -p -o scratch-org

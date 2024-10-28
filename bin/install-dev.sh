@@ -15,23 +15,23 @@ echo "Cleaning previous scratch org..."
 echo ""
 
 echo "Creating scratch org..." 
-#vsf org create scratch -s -f config/project-scratch-def.json -d 30 -a $ORG_ALIAS
+#vsf org create scratch -f config/project-scratch-def.json -d 30 -a $ORG_ALIAS
 echo ""
 
 echo "Creating dummy Experience site..."
-sf community create --name "Some Test" --templatename "Aloha" -p "somesome"
+sf community create --name "Some Test" --templat-name "Aloha" -p "somesome"
 echo ""
 
 echo "Sleeping 30s for Experience site deployment"
-sleep 30
+sleep 60
 echo ""
 
 echo "Deploying standard metadata..."
-sf project deploy start --metadata ApexClass --metadata Layout --metadata CustomObject --metadata LightningComponentBundle --metadata ManagedContentType --metadata StaticResource --metadata CustomTab --metadata PermissionSet --metadata Flow -m ApexClass,Layout,CustomObject,LightningComponentBundle,ManagedContentType,CustomObject,StaticResource,CustomTab,PermissionSet,Flow
+sf project deploy start --metadata ApexClass --metadata Layout --metadata CustomObject --metadata LightningComponentBundle --metadata ManagedContentType --metadata StaticResource --metadata CustomTab --metadata PermissionSet --metadata Flow
 echo ""
 
 echo "Deploying Experience site metadata..."
-sf project deploy start --metadata ApexPage --metadata CustomSite --metadata ExperienceBundle --metadata NavigationMenu --metadata Network --metadata Profile
+sf project deploy start --metadata ApexPage --metadata CustomSite --metadata ExperienceBundle --metadata NavigationMenu --metadata Network --metadata Profile --ignore-conflicts
 echo ""
 
 echo "Assigning permission set for Marketing Site Builder"

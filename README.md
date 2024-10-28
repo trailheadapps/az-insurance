@@ -41,7 +41,7 @@ AZ Insurance is a sample application that demonstrates how to build customer, pa
 1.  Create a scratch org and provide it with an alias (**az-insurance** in the command below):
 
     ```zsh
-    sf org create scratch -s -f config/project-scratch-def.json -a az-insurance
+    sf org create scratch -f config/project-scratch-def.json -a az-insurance
     ```
 
 1.  Create a dummy Experience site. This is currently a necessary intermediate step to provision Experience Cloud related metadata before deploying our site.
@@ -58,9 +58,11 @@ AZ Insurance is a sample application that demonstrates how to build customer, pa
 
 1.  Deploy Experience site metadata:
 
-    ```zsh
-    sf project deploy start --metadata ApexClass --metadata Layout --metadata CustomObject --metadata LightningComponentBundle --metadata ManagedContentType --metadata StaticResource --metadata CustomTab --metadata PermissionSet --metadata Flow
-    ```
+        ```zsh
+
+    sf project deploy start --metadata ApexPage --metadata CustomSite --metadata ExperienceBundle --metadata NavigationMenu --metadata Network --metadata Profile
+
+        ```
 
 1.  Assign the **LWR_Marketing_Builder** permission set to the default user:
 
